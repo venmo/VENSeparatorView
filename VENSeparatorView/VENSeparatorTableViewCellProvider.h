@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@protocol VENTableViewSeparatorProviderDelegate <NSObject>
+@protocol VENSeparatorTableViewCellProviderDelegate <NSObject>
 
 @required
 /**
@@ -13,7 +13,7 @@
 
 @interface VENSeparatorTableViewCellProvider : NSObject
 
-@property (nonatomic, weak) id<VENTableViewSeparatorProviderDelegate, UITableViewDataSource> delegate;
+@property (nonatomic, weak) id<VENSeparatorTableViewCellProviderDelegate, UITableViewDataSource> delegate;
 
 /**
  Creates a separator provider that can apply seperators with the given stroke color, fill color, border width and delegate.
@@ -28,7 +28,7 @@
 - (instancetype)initWithStrokeColor:(UIColor *)strokeColor
                           fillColor:(UIColor *)fillColor
                         borderWidth:(CGFloat)borderWidth
-                           delegate:(id<VENTableViewSeparatorProviderDelegate, UITableViewDataSource>)delegate;
+                           delegate:(id<VENSeparatorTableViewCellProviderDelegate, UITableViewDataSource>)delegate;
 
 
 /**

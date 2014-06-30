@@ -11,7 +11,7 @@
 
 @implementation VENSeparatorTableViewCellProvider
 
-- (instancetype)initWithStrokeColor:(UIColor *)strokeColor fillColor:(UIColor *)fillColor borderWidth:(CGFloat)borderWidth delegate:(id<VENTableViewSeparatorProviderDelegate, UITableViewDataSource>)delegate {
+- (instancetype)initWithStrokeColor:(UIColor *)strokeColor fillColor:(UIColor *)fillColor borderWidth:(CGFloat)borderWidth delegate:(id<VENSeparatorTableViewCellProviderDelegate, UITableViewDataSource>)delegate {
     self = [super init];
     if (self) {
         _strokeColor = strokeColor;

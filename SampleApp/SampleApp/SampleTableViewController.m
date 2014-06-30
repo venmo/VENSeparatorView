@@ -1,7 +1,7 @@
 #import "SampleTableViewController.h"
 #import "VENSeparatorTableViewCellProvider.h"
 
-@interface SampleTableViewController () <VENTableViewSeparatorProviderDelegate>
+@interface SampleTableViewController () <VENSeparatorTableViewCellProviderDelegate>
 
 @property (nonatomic, strong) VENSeparatorTableViewCellProvider *separatorProvider;
 
