@@ -1,9 +1,9 @@
 #import "SampleTableViewController.h"
-#import "VENTableViewCellSeparatorProvider.h"
+#import "VENSeparatorTableViewCellProvider.h"
 
 @interface SampleTableViewController () <VENTableViewSeparatorProviderDelegate>
 
-@property (nonatomic, strong) VENTableViewCellSeparatorProvider *separatorProvider;
+@property (nonatomic, strong) VENSeparatorTableViewCellProvider *separatorProvider;
 
 @end
 
@@ -13,7 +13,7 @@
 {
     [super viewDidLoad];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.separatorProvider = [[VENTableViewCellSeparatorProvider alloc]
+    self.separatorProvider = [[VENSeparatorTableViewCellProvider alloc]
                               initWithStrokeColor:[UIColor grayColor]
                               fillColor:[UIColor lightGrayColor]
                               borderWidth:0.5f

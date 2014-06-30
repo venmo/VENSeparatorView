@@ -11,7 +11,7 @@
 
 @end
 
-@interface VENTableViewCellSeparatorProvider : NSObject
+@interface VENSeparatorTableViewCellProvider : NSObject
 
 @property (nonatomic, weak) id<VENTableViewSeparatorProviderDelegate, UITableViewDataSource> delegate;
 

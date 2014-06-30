@@ -1,7 +1,7 @@
-#import "VENTableViewCellSeparatorProvider.h"
+#import "VENSeparatorTableViewCellProvider.h"
 #import "UITableViewCell+VENSeparatorView.h"
 
-@interface VENTableViewCellSeparatorProvider()
+@interface VENSeparatorTableViewCellProvider()
 
 @property (nonatomic, strong) UIColor *strokeColor;
 @property (nonatomic, strong) UIColor *fillColor;
@@ -9,7 +9,7 @@
 
 @end
 
-@implementation VENTableViewCellSeparatorProvider
+@implementation VENSeparatorTableViewCellProvider
 
 - (instancetype)initWithStrokeColor:(UIColor *)strokeColor fillColor:(UIColor *)fillColor borderWidth:(CGFloat)borderWidth delegate:(id<VENTableViewSeparatorProviderDelegate, UITableViewDataSource>)delegate {
     self = [super init];
