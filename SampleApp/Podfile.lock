@@ -1,10 +1,13 @@
 PODS:
   - ColorUtils (1.1.2)
+  - FrameAccessor (1.1.0)
 
 DEPENDENCIES:
   - ColorUtils (~> 1.1.2)
+  - FrameAccessor (~> 1.1.0)
 
 SPEC CHECKSUMS:
   ColorUtils: 2455988658eafc34f302a7d91113d7a9415d072c
+  FrameAccessor: 1900268ec0c4872ce0948baaf71f995ea6d0f28c
 
 COCOAPODS: 0.33.1

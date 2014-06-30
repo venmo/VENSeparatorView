@@ -5,7 +5,6 @@
 #define DefaultStrokeColor [self.superview.backgroundColor colorWithBrightness:0.25f]
 
 static CGFloat DefaultBorderWidth = 0.50f;
-
 static NSInteger DefaultJaggedEdgeHorizontalVertexDistance = 6;
 static NSInteger DefaultJaggedEdgeVerticalVertexDistance = 5;
 
@@ -31,7 +30,7 @@ static NSInteger DefaultJaggedEdgeVerticalVertexDistance = 5;
 }
 
 - (void)drawRect:(CGRect)rect {
-//    [super drawRect:rect];
+    [super drawRect:rect];
     switch (self.topSeparatorType) {
         case VENSeparatorTypeStraight:
             [self drawSeparatorAtPosition:VENSeparatorPositionTop

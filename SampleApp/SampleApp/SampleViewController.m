@@ -12,15 +12,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.separatorView setTopLineSeparatorType:VENSeparatorTypeStraight bottomLineSeparatorType:VENSeparatorTypeJagged];
-
-    
+    [self.separatorView setTopLineSeparatorType:VENSeparatorTypeStraight bottomLineSeparatorType:VENSeparatorTypeJagged];    
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 @end

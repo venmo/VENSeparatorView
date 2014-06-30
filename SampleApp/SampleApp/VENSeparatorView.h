@@ -25,14 +25,22 @@ typedef NS_ENUM(NSUInteger, VENSeparatorPosition) {
 @property (nonatomic, strong) UIColor *fillColor;
 
 /**
- * Initializes a separator view with the given separator types.
+ * Initializes a view with the given separator types.
+ 
+ @param frame The frame of the separator view. This should usually just be set to the frame of its superview.
+ @param topLineSeparatorType The type of separator at the top of the separator view.
+ @param bottomLineSeparatorType The type of separator at the bottom of the separator view.
  */
 - (instancetype)initWithFrame:(CGRect)frame
          topLineSeparatorType:(VENSeparatorType)topLineSeparatorType
       bottomLineSeparatorType:(VENSeparatorType)bottomLineSeparatorType;
 
 /**
- * Sets separator view with the given separator types.
+ * Sets the top and bottom separator types of the reciever
+
+ @param topLineSeparatorType The type of separator at the top of the separator view.
+ @param bottomLineSeparatorType The type of separator at the bottom of the separator view.
+
  */
 - (void)setTopLineSeparatorType:(VENSeparatorType)topLineSeparatorType
         bottomLineSeparatorType:(VENSeparatorType)bottomLineSeparatorType;

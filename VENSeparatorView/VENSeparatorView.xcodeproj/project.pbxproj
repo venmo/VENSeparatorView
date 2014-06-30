@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A54D3871961169500A5FE74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A54D3861961169500A5FE74 /* Foundation.framework */; };
+		3A54D38C1961169500A5FE74 /* VENSeparatorView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A54D38B1961169500A5FE74 /* VENSeparatorView.h */; };
+		3A54D38E1961169500A5FE74 /* VENSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A54D38D1961169500A5FE74 /* VENSeparatorView.m */; };
+		3A54D3951961169500A5FE74 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A54D3941961169500A5FE74 /* XCTest.framework */; };
+		3A54D3961961169500A5FE74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A54D3861961169500A5FE74 /* Foundation.framework */; };
+		3A54D3981961169500A5FE74 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A54D3971961169500A5FE74 /* UIKit.framework */; };
+		3A54D39B1961169500A5FE74 /* libVENSeparatorView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A54D3831961169500A5FE74 /* libVENSeparatorView.a */; };
+		3A54D3A11961169500A5FE74 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A54D39F1961169500A5FE74 /* InfoPlist.strings */; };
+		3A54D3A31961169500A5FE74 /* VENSeparatorViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A54D3A21961169500A5FE74 /* VENSeparatorViewTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A54D3991961169500A5FE74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A54D37B1961169500A5FE74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A54D3821961169500A5FE74;
+			remoteInfo = VENSeparatorView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3A54D3811961169500A5FE74 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				3A54D38C1961169500A5FE74 /* VENSeparatorView.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3A54D3831961169500A5FE74 /* libVENSeparatorView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVENSeparatorView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A54D3861961169500A5FE74 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3A54D38A1961169500A5FE74 /* VENSeparatorView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VENSeparatorView-Prefix.pch"; sourceTree = "<group>"; };
+		3A54D38B1961169500A5FE74 /* VENSeparatorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VENSeparatorView.h; sourceTree = "<group>"; };
+		3A54D38D1961169500A5FE74 /* VENSeparatorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VENSeparatorView.m; sourceTree = "<group>"; };
+		3A54D3931961169500A5FE74 /* VENSeparatorViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VENSeparatorViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A54D3941961169500A5FE74 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3A54D3971961169500A5FE74 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3A54D39E1961169500A5FE74 /* VENSeparatorViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VENSeparatorViewTests-Info.plist"; sourceTree = "<group>"; };
+		3A54D3A01961169500A5FE74 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3A54D3A21961169500A5FE74 /* VENSeparatorViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VENSeparatorViewTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A54D3801961169500A5FE74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A54D3871961169500A5FE74 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A54D3901961169500A5FE74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A54D39B1961169500A5FE74 /* libVENSeparatorView.a in Frameworks */,
+				3A54D3951961169500A5FE74 /* XCTest.framework in Frameworks */,
+				3A54D3981961169500A5FE74 /* UIKit.framework in Frameworks */,
+				3A54D3961961169500A5FE74 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A54D37A1961169500A5FE74 = {
+			isa = PBXGroup;
+			children = (
+				3A54D3881961169500A5FE74 /* VENSeparatorView */,
+				3A54D39C1961169500A5FE74 /* VENSeparatorViewTests */,
+				3A54D3851961169500A5FE74 /* Frameworks */,
+				3A54D3841961169500A5FE74 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A54D3841961169500A5FE74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A54D3831961169500A5FE74 /* libVENSeparatorView.a */,
+				3A54D3931961169500A5FE74 /* VENSeparatorViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A54D3851961169500A5FE74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A54D3861961169500A5FE74 /* Foundation.framework */,
+				3A54D3941961169500A5FE74 /* XCTest.framework */,
+				3A54D3971961169500A5FE74 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A54D3881961169500A5FE74 /* VENSeparatorView */ = {
+			isa = PBXGroup;
+			children = (
+				3A54D38B1961169500A5FE74 /* VENSeparatorView.h */,
+				3A54D38D1961169500A5FE74 /* VENSeparatorView.m */,
+				3A54D3891961169500A5FE74 /* Supporting Files */,
+			);
+			path = VENSeparatorView;
+			sourceTree = "<group>";
+		};
+		3A54D3891961169500A5FE74 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A54D38A1961169500A5FE74 /* VENSeparatorView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A54D39C1961169500A5FE74 /* VENSeparatorViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A54D3A21961169500A5FE74 /* VENSeparatorViewTests.m */,
+				3A54D39D1961169500A5FE74 /* Supporting Files */,
+			);
+			path = VENSeparatorViewTests;
+			sourceTree = "<group>";
+		};
+		3A54D39D1961169500A5FE74 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A54D39E1961169500A5FE74 /* VENSeparatorViewTests-Info.plist */,
+				3A54D39F1961169500A5FE74 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A54D3821961169500A5FE74 /* VENSeparatorView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A54D3A61961169500A5FE74 /* Build configuration list for PBXNativeTarget "VENSeparatorView" */;
+			buildPhases = (
+				3A54D37F1961169500A5FE74 /* Sources */,
+				3A54D3801961169500A5FE74 /* Frameworks */,
+				3A54D3811961169500A5FE74 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VENSeparatorView;
+			productName = VENSeparatorView;
+			productReference = 3A54D3831961169500A5FE74 /* libVENSeparatorView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3A54D3921961169500A5FE74 /* VENSeparatorViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A54D3A91961169500A5FE74 /* Build configuration list for PBXNativeTarget "VENSeparatorViewTests" */;
+			buildPhases = (
+				3A54D38F1961169500A5FE74 /* Sources */,
+				3A54D3901961169500A5FE74 /* Frameworks */,
+				3A54D3911961169500A5FE74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A54D39A1961169500A5FE74 /* PBXTargetDependency */,
+			);
+			name = VENSeparatorViewTests;
+			productName = VENSeparatorViewTests;
+			productReference = 3A54D3931961169500A5FE74 /* VENSeparatorViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A54D37B1961169500A5FE74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Venmo;
+			};
+			buildConfigurationList = 3A54D37E1961169500A5FE74 /* Build configuration list for PBXProject "VENSeparatorView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3A54D37A1961169500A5FE74;
+			productRefGroup = 3A54D3841961169500A5FE74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A54D3821961169500A5FE74 /* VENSeparatorView */,
+				3A54D3921961169500A5FE74 /* VENSeparatorViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A54D3911961169500A5FE74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A54D3A11961169500A5FE74 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A54D37F1961169500A5FE74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A54D38E1961169500A5FE74 /* VENSeparatorView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A54D38F1961169500A5FE74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A54D3A31961169500A5FE74 /* VENSeparatorViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A54D39A1961169500A5FE74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A54D3821961169500A5FE74 /* VENSeparatorView */;
+			targetProxy = 3A54D3991961169500A5FE74 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A54D39F1961169500A5FE74 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A54D3A01961169500A5FE74 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A54D3A41961169500A5FE74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3A54D3A51961169500A5FE74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A54D3A71961169500A5FE74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/VENSeparatorView.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VENSeparatorView/VENSeparatorView-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3A54D3A81961169500A5FE74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/VENSeparatorView.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VENSeparatorView/VENSeparatorView-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3A54D3AA1961169500A5FE74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VENSeparatorView/VENSeparatorView-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VENSeparatorViewTests/VENSeparatorViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3A54D3AB1961169500A5FE74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VENSeparatorView/VENSeparatorView-Prefix.pch";
+				INFOPLIST_FILE = "VENSeparatorViewTests/VENSeparatorViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A54D37E1961169500A5FE74 /* Build configuration list for PBXProject "VENSeparatorView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A54D3A41961169500A5FE74 /* Debug */,
+				3A54D3A51961169500A5FE74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A54D3A61961169500A5FE74 /* Build configuration list for PBXNativeTarget "VENSeparatorView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A54D3A71961169500A5FE74 /* Debug */,
+				3A54D3A81961169500A5FE74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3A54D3A91961169500A5FE74 /* Build configuration list for PBXNativeTarget "VENSeparatorViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A54D3AA1961169500A5FE74 /* Debug */,
+				3A54D3AB1961169500A5FE74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A54D37B1961169500A5FE74 /* Project object */;
+}

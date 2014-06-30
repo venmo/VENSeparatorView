@@ -21,11 +21,10 @@
 		3A2F2584195D20DD00226DFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2F2566195D20DD00226DFF /* UIKit.framework */; };
 		3A2F258C195D20DD00226DFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A2F258A195D20DD00226DFF /* InfoPlist.strings */; };
 		3A2F258E195D20DD00226DFF /* SampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2F258D195D20DD00226DFF /* SampleAppTests.m */; };
-		3A2F259E195D226900226DFF /* VENSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2F259D195D226900226DFF /* VENSeparatorView.m */; };
-		3A2F25AA195EFE4F00226DFF /* UITableViewCell+VENSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2F25A9195EFE4F00226DFF /* UITableViewCell+VENSeparatorView.m */; };
 		3A54D352195F8C3400A5FE74 /* SampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A54D351195F8C3400A5FE74 /* SampleTableViewController.m */; };
-		3A54D355195F8C9200A5FE74 /* SampleSeparatorSubclassView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A54D354195F8C9200A5FE74 /* SampleSeparatorSubclassView.m */; };
-		3A54D358195FCFAE00A5FE74 /* VENTableViewSeparatorProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A54D357195FCFAE00A5FE74 /* VENTableViewSeparatorProvider.m */; };
+		3A54D3771960AF1B00A5FE74 /* UITableViewCell+VENSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A54D3711960AF1B00A5FE74 /* UITableViewCell+VENSeparatorView.m */; };
+		3A54D3781960AF1B00A5FE74 /* VENSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A54D3731960AF1B00A5FE74 /* VENSeparatorView.m */; };
+		3A54D3791960AF1B00A5FE74 /* VENTableViewCellSeparatorProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A54D3751960AF1B00A5FE74 /* VENTableViewCellSeparatorProvider.m */; };
 		8E79DDD2B962473B859CE1B2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC2D5250E7D40B783127C54 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -60,16 +59,14 @@
 		3A2F2589195D20DD00226DFF /* SampleAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleAppTests-Info.plist"; sourceTree = "<group>"; };
 		3A2F258B195D20DD00226DFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3A2F258D195D20DD00226DFF /* SampleAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleAppTests.m; sourceTree = "<group>"; };
-		3A2F259C195D226900226DFF /* VENSeparatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VENSeparatorView.h; sourceTree = "<group>"; };
-		3A2F259D195D226900226DFF /* VENSeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VENSeparatorView.m; sourceTree = "<group>"; };
-		3A2F25A8195EFE4F00226DFF /* UITableViewCell+VENSeparatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+VENSeparatorView.h"; sourceTree = "<group>"; };
-		3A2F25A9195EFE4F00226DFF /* UITableViewCell+VENSeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+VENSeparatorView.m"; sourceTree = "<group>"; };
 		3A54D350195F8C3400A5FE74 /* SampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleTableViewController.h; sourceTree = "<group>"; };
 		3A54D351195F8C3400A5FE74 /* SampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTableViewController.m; sourceTree = "<group>"; };
-		3A54D353195F8C9200A5FE74 /* SampleSeparatorSubclassView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleSeparatorSubclassView.h; sourceTree = "<group>"; };
-		3A54D354195F8C9200A5FE74 /* SampleSeparatorSubclassView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleSeparatorSubclassView.m; sourceTree = "<group>"; };
-		3A54D356195FCFAE00A5FE74 /* VENTableViewSeparatorProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VENTableViewSeparatorProvider.h; sourceTree = "<group>"; };
-		3A54D357195FCFAE00A5FE74 /* VENTableViewSeparatorProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VENTableViewSeparatorProvider.m; sourceTree = "<group>"; };
+		3A54D3701960AF1B00A5FE74 /* UITableViewCell+VENSeparatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+VENSeparatorView.h"; sourceTree = "<group>"; };
+		3A54D3711960AF1B00A5FE74 /* UITableViewCell+VENSeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+VENSeparatorView.m"; sourceTree = "<group>"; };
+		3A54D3721960AF1B00A5FE74 /* VENSeparatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VENSeparatorView.h; sourceTree = "<group>"; };
+		3A54D3731960AF1B00A5FE74 /* VENSeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VENSeparatorView.m; sourceTree = "<group>"; };
+		3A54D3741960AF1B00A5FE74 /* VENTableViewCellSeparatorProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VENTableViewCellSeparatorProvider.h; sourceTree = "<group>"; };
+		3A54D3751960AF1B00A5FE74 /* VENTableViewCellSeparatorProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VENTableViewCellSeparatorProvider.m; sourceTree = "<group>"; };
 		637D3DD3A9CE4F06B995530E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,14 +135,12 @@
 				3A2F2578195D20DD00226DFF /* SampleViewController.m */,
 				3A54D350195F8C3400A5FE74 /* SampleTableViewController.h */,
 				3A54D351195F8C3400A5FE74 /* SampleTableViewController.m */,
-				3A54D353195F8C9200A5FE74 /* SampleSeparatorSubclassView.h */,
-				3A54D354195F8C9200A5FE74 /* SampleSeparatorSubclassView.m */,
-				3A54D356195FCFAE00A5FE74 /* VENTableViewSeparatorProvider.h */,
-				3A54D357195FCFAE00A5FE74 /* VENTableViewSeparatorProvider.m */,
-				3A2F259C195D226900226DFF /* VENSeparatorView.h */,
-				3A2F259D195D226900226DFF /* VENSeparatorView.m */,
-				3A2F25A8195EFE4F00226DFF /* UITableViewCell+VENSeparatorView.h */,
-				3A2F25A9195EFE4F00226DFF /* UITableViewCell+VENSeparatorView.m */,
+				3A54D3701960AF1B00A5FE74 /* UITableViewCell+VENSeparatorView.h */,
+				3A54D3711960AF1B00A5FE74 /* UITableViewCell+VENSeparatorView.m */,
+				3A54D3721960AF1B00A5FE74 /* VENSeparatorView.h */,
+				3A54D3731960AF1B00A5FE74 /* VENSeparatorView.m */,
+				3A54D3741960AF1B00A5FE74 /* VENTableViewCellSeparatorProvider.h */,
+				3A54D3751960AF1B00A5FE74 /* VENTableViewCellSeparatorProvider.m */,
 				3A2F257A195D20DD00226DFF /* Images.xcassets */,
 				3A2F2569195D20DD00226DFF /* Supporting Files */,
 			);
@@ -316,14 +311,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A54D3781960AF1B00A5FE74 /* VENSeparatorView.m in Sources */,
 				3A2F2579195D20DD00226DFF /* SampleViewController.m in Sources */,
-				3A54D355195F8C9200A5FE74 /* SampleSeparatorSubclassView.m in Sources */,
-				3A54D358195FCFAE00A5FE74 /* VENTableViewSeparatorProvider.m in Sources */,
+				3A54D3791960AF1B00A5FE74 /* VENTableViewCellSeparatorProvider.m in Sources */,
 				3A54D352195F8C3400A5FE74 /* SampleTableViewController.m in Sources */,
+				3A54D3771960AF1B00A5FE74 /* UITableViewCell+VENSeparatorView.m in Sources */,
 				3A2F2573195D20DD00226DFF /* VENAppDelegate.m in Sources */,
-				3A2F259E195D226900226DFF /* VENSeparatorView.m in Sources */,
 				3A2F256F195D20DD00226DFF /* main.m in Sources */,
-				3A2F25AA195EFE4F00226DFF /* UITableViewCell+VENSeparatorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
