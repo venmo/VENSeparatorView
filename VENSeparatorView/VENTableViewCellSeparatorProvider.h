@@ -33,15 +33,15 @@
 
 /**
  Applies the separators to the specified cell. This function should be called in the table view tableView:cellForRowAtIndexPath method.
- 
+
  @param cell The cell on which the separator view is added. The separator view will be added to the first subview of this cell's content view.
  @param indexPath The indexPath of the specified cell.
  @param tableview The table view that contains the specified cell.
- @param expectedHeight The expected height of the specified cell. If set to 0, the height of the separator view will be the default height of the cell.
+ @param height The expected height of the specified cell. If set to 0, the height of the separator view will be the default height of the cell.
  */
 - (void)applySeparatorsToCell:(UITableViewCell *)cell
                   atIndexPath:(NSIndexPath *)indexPath
                   inTableView:(UITableView *)tableView
-               expectedHeight:(CGFloat)expectedHeight;
+                       height:(CGFloat)height;
 
 @end

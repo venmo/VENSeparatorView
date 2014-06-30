@@ -39,7 +39,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     cell.textLabel.text = [NSString stringWithFormat:@"%d", indexPath.row];
     cell.textLabel.backgroundColor = [UIColor clearColor];
-    [self.separatorProvider applySeparatorsToCell:cell atIndexPath:indexPath inTableView:tableView expectedHeight:0];
+    [self.separatorProvider applySeparatorsToCell:cell atIndexPath:indexPath inTableView:tableView height:0];
     return cell;
 }
 

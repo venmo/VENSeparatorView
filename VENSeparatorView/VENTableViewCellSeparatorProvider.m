@@ -25,7 +25,7 @@
 - (void)applySeparatorsToCell:(UITableViewCell *)cell
                   atIndexPath:(NSIndexPath *)indexPath
                   inTableView:(UITableView *)tableView
-               expectedHeight:(CGFloat)height
+                       height:(CGFloat)height
 {
     BOOL topIsJagged = NO;
     BOOL bottomIsJagged = NO;
@@ -70,7 +70,7 @@
     CGFloat estimatedHeight = height ?: CGRectGetHeight(cell.frame);
 
     VENSeparatorView *separatorView = [cell addTopLineSeparatorType:topType bottomLineSeparatorType:bottomType
-                                            withEstimatedCellHeight:estimatedHeight];
+                                                         cellHeight:estimatedHeight];
     separatorView.strokeColor = self.strokeColor;
     separatorView.fillColor = self.fillColor;
     separatorView.borderWidth = self.borderWidth;

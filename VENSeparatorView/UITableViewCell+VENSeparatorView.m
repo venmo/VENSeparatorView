@@ -4,16 +4,16 @@
 
 - (VENSeparatorView *)addTopLineSeparatorType:(VENSeparatorType)topLineSeparatorType
                       bottomLineSeparatorType:(VENSeparatorType)bottomLineSeparatorType
-                      withEstimatedCellHeight:(CGFloat)height {
+                                   cellHeight:(CGFloat)height {
     return [self addTopLineSeparatorType:topLineSeparatorType
                  bottomLineSeparatorType:bottomLineSeparatorType
-                 withEstimatedCellHeight:height
+                              cellHeight:height
                 forSeparatorViewSubclass:[VENSeparatorView class]];
 }
 
 - (VENSeparatorView *)addTopLineSeparatorType:(VENSeparatorType)topLineSeparatorType
                       bottomLineSeparatorType:(VENSeparatorType)bottomLineSeparatorType
-                      withEstimatedCellHeight:(CGFloat)height
+                                   cellHeight:(CGFloat)height
                      forSeparatorViewSubclass:(Class)separatorClass
 {
     UIView *firstSubview = [[self.contentView subviews] firstObject];
@@ -26,8 +26,8 @@
         if (differentTopTypes || differentBottomTypes || differentHeights) {
             separatorView.topSeparatorType = topLineSeparatorType;
             separatorView.bottomSeparatorType = bottomLineSeparatorType;
-            
-        CGRect separatorFrame = [self adjustedFrameForTopSeparatorType:topLineSeparatorType bottomSeparatorType:bottomLineSeparatorType cellHeight:height];
+
+            CGRect separatorFrame = [self adjustedFrameForTopSeparatorType:topLineSeparatorType bottomSeparatorType:bottomLineSeparatorType cellHeight:height];
             separatorView.frame = separatorFrame;
             [separatorView setNeedsDisplay];
         }
@@ -37,8 +37,8 @@
         }
         CGRect separatorFrame = [self adjustedFrameForTopSeparatorType:topLineSeparatorType bottomSeparatorType:bottomLineSeparatorType cellHeight:height];
         separatorView = [[separatorClass alloc] initWithFrame:separatorFrame
-                         topLineSeparatorType:topLineSeparatorType
-                      bottomLineSeparatorType:bottomLineSeparatorType];
+                                         topLineSeparatorType:topLineSeparatorType
+                                      bottomLineSeparatorType:bottomLineSeparatorType];
         separatorView.backgroundColor = [UIColor clearColor];
         [self.contentView insertSubview:separatorView atIndex:0];
     }
