@@ -5,10 +5,10 @@ Pod::Spec.new do |s|
   s.description   = <<-DESC
                    An easy to use separator view that is used in the Venmo app.
                    DESC
-  s.homepage     = 'https://github.com/venmo/VENTokenField'
+  s.homepage     = 'https://github.braintreeps.com/dasmer/VENSeparatorView'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { 'Venmo' => 'ios@venmo.com'}
-  s.source       = { :git => 'git@github.com:venmo/VENTokenField.git', :tag => "v#{s.version}"}
+  s.source       = { :git => 'git@github.braintreeps.com:dasmer/VENSeparatorView.git', :tag => "v#{s.version}"}
   s.source_files = 'VENSeparatorView/*.{h,m}'
   s.dependency 'ColorUtils', '~> 1.1.2'
   s.platform     = :ios, '6.0'
