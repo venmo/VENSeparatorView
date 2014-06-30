@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A1893A61961C654000397B6 /* UITableViewCell+VENSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1893A11961C654000397B6 /* UITableViewCell+VENSeparatorView.m */; };
+		3A1893A71961C654000397B6 /* VENSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1893A31961C654000397B6 /* VENSeparatorView.m */; };
+		3A1893A81961C654000397B6 /* VENTableViewCellSeparatorProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1893A51961C654000397B6 /* VENTableViewCellSeparatorProvider.m */; };
 		3A2F2563195D20DD00226DFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2F2562195D20DD00226DFF /* Foundation.framework */; };
 		3A2F2565195D20DD00226DFF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2F2564195D20DD00226DFF /* CoreGraphics.framework */; };
 		3A2F2567195D20DD00226DFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2F2566195D20DD00226DFF /* UIKit.framework */; };
 		3A2F256D195D20DD00226DFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A2F256B195D20DD00226DFF /* InfoPlist.strings */; };
 		3A2F256F195D20DD00226DFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2F256E195D20DD00226DFF /* main.m */; };
-		3A2F2573195D20DD00226DFF /* VENAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2F2572195D20DD00226DFF /* VENAppDelegate.m */; };
+		3A2F2573195D20DD00226DFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2F2572195D20DD00226DFF /* AppDelegate.m */; };
 		3A2F2576195D20DD00226DFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2F2574195D20DD00226DFF /* Main.storyboard */; };
 		3A2F2579195D20DD00226DFF /* SampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2F2578195D20DD00226DFF /* SampleViewController.m */; };
 		3A2F257B195D20DD00226DFF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A2F257A195D20DD00226DFF /* Images.xcassets */; };
@@ -22,9 +25,6 @@
 		3A2F258C195D20DD00226DFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A2F258A195D20DD00226DFF /* InfoPlist.strings */; };
 		3A2F258E195D20DD00226DFF /* SampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2F258D195D20DD00226DFF /* SampleAppTests.m */; };
 		3A54D352195F8C3400A5FE74 /* SampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A54D351195F8C3400A5FE74 /* SampleTableViewController.m */; };
-		3A54D3771960AF1B00A5FE74 /* UITableViewCell+VENSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A54D3711960AF1B00A5FE74 /* UITableViewCell+VENSeparatorView.m */; };
-		3A54D3781960AF1B00A5FE74 /* VENSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A54D3731960AF1B00A5FE74 /* VENSeparatorView.m */; };
-		3A54D3791960AF1B00A5FE74 /* VENTableViewCellSeparatorProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A54D3751960AF1B00A5FE74 /* VENTableViewCellSeparatorProvider.m */; };
 		8E79DDD2B962473B859CE1B2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC2D5250E7D40B783127C54 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +40,12 @@
 
 /* Begin PBXFileReference section */
 		1FC2D5250E7D40B783127C54 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A1893A01961C654000397B6 /* UITableViewCell+VENSeparatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+VENSeparatorView.h"; path = "../../VENSeparatorView/UITableViewCell+VENSeparatorView.h"; sourceTree = "<group>"; };
+		3A1893A11961C654000397B6 /* UITableViewCell+VENSeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+VENSeparatorView.m"; path = "../../VENSeparatorView/UITableViewCell+VENSeparatorView.m"; sourceTree = "<group>"; };
+		3A1893A21961C654000397B6 /* VENSeparatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VENSeparatorView.h; path = ../../VENSeparatorView/VENSeparatorView.h; sourceTree = "<group>"; };
+		3A1893A31961C654000397B6 /* VENSeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VENSeparatorView.m; path = ../../VENSeparatorView/VENSeparatorView.m; sourceTree = "<group>"; };
+		3A1893A41961C654000397B6 /* VENTableViewCellSeparatorProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VENTableViewCellSeparatorProvider.h; path = ../../VENSeparatorView/VENTableViewCellSeparatorProvider.h; sourceTree = "<group>"; };
+		3A1893A51961C654000397B6 /* VENTableViewCellSeparatorProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VENTableViewCellSeparatorProvider.m; path = ../../VENSeparatorView/VENTableViewCellSeparatorProvider.m; sourceTree = "<group>"; };
 		3A2F255F195D20DD00226DFF /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A2F2562195D20DD00226DFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3A2F2564195D20DD00226DFF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,8 +54,8 @@
 		3A2F256C195D20DD00226DFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3A2F256E195D20DD00226DFF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3A2F2570195D20DD00226DFF /* SampleApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleApp-Prefix.pch"; sourceTree = "<group>"; };
-		3A2F2571195D20DD00226DFF /* VENAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VENAppDelegate.h; sourceTree = "<group>"; };
-		3A2F2572195D20DD00226DFF /* VENAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VENAppDelegate.m; sourceTree = "<group>"; };
+		3A2F2571195D20DD00226DFF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3A2F2572195D20DD00226DFF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3A2F2575195D20DD00226DFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A2F2577195D20DD00226DFF /* SampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleViewController.h; sourceTree = "<group>"; };
 		3A2F2578195D20DD00226DFF /* SampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleViewController.m; sourceTree = "<group>"; };
@@ -61,12 +67,6 @@
 		3A2F258D195D20DD00226DFF /* SampleAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleAppTests.m; sourceTree = "<group>"; };
 		3A54D350195F8C3400A5FE74 /* SampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleTableViewController.h; sourceTree = "<group>"; };
 		3A54D351195F8C3400A5FE74 /* SampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTableViewController.m; sourceTree = "<group>"; };
-		3A54D3701960AF1B00A5FE74 /* UITableViewCell+VENSeparatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+VENSeparatorView.h"; sourceTree = "<group>"; };
-		3A54D3711960AF1B00A5FE74 /* UITableViewCell+VENSeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+VENSeparatorView.m"; sourceTree = "<group>"; };
-		3A54D3721960AF1B00A5FE74 /* VENSeparatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VENSeparatorView.h; sourceTree = "<group>"; };
-		3A54D3731960AF1B00A5FE74 /* VENSeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VENSeparatorView.m; sourceTree = "<group>"; };
-		3A54D3741960AF1B00A5FE74 /* VENTableViewCellSeparatorProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VENTableViewCellSeparatorProvider.h; sourceTree = "<group>"; };
-		3A54D3751960AF1B00A5FE74 /* VENTableViewCellSeparatorProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VENTableViewCellSeparatorProvider.m; sourceTree = "<group>"; };
 		637D3DD3A9CE4F06B995530E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +95,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A18939F1961C632000397B6 /* VENSeparatorView */ = {
+			isa = PBXGroup;
+			children = (
+				3A1893A01961C654000397B6 /* UITableViewCell+VENSeparatorView.h */,
+				3A1893A11961C654000397B6 /* UITableViewCell+VENSeparatorView.m */,
+				3A1893A21961C654000397B6 /* VENSeparatorView.h */,
+				3A1893A31961C654000397B6 /* VENSeparatorView.m */,
+				3A1893A41961C654000397B6 /* VENTableViewCellSeparatorProvider.h */,
+				3A1893A51961C654000397B6 /* VENTableViewCellSeparatorProvider.m */,
+			);
+			name = VENSeparatorView;
+			sourceTree = "<group>";
+		};
 		3A2F2556195D20DD00226DFF = {
 			isa = PBXGroup;
 			children = (
@@ -135,13 +148,7 @@
 				3A2F2578195D20DD00226DFF /* SampleViewController.m */,
 				3A54D350195F8C3400A5FE74 /* SampleTableViewController.h */,
 				3A54D351195F8C3400A5FE74 /* SampleTableViewController.m */,
-				3A54D3701960AF1B00A5FE74 /* UITableViewCell+VENSeparatorView.h */,
-				3A54D3711960AF1B00A5FE74 /* UITableViewCell+VENSeparatorView.m */,
-				3A54D3721960AF1B00A5FE74 /* VENSeparatorView.h */,
-				3A54D3731960AF1B00A5FE74 /* VENSeparatorView.m */,
-				3A54D3741960AF1B00A5FE74 /* VENTableViewCellSeparatorProvider.h */,
-				3A54D3751960AF1B00A5FE74 /* VENTableViewCellSeparatorProvider.m */,
-				3A2F257A195D20DD00226DFF /* Images.xcassets */,
+				3A18939F1961C632000397B6 /* VENSeparatorView */,
 				3A2F2569195D20DD00226DFF /* Supporting Files */,
 			);
 			path = SampleApp;
@@ -150,8 +157,9 @@
 		3A2F2569195D20DD00226DFF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3A2F2571195D20DD00226DFF /* VENAppDelegate.h */,
-				3A2F2572195D20DD00226DFF /* VENAppDelegate.m */,
+				3A2F257A195D20DD00226DFF /* Images.xcassets */,
+				3A2F2571195D20DD00226DFF /* AppDelegate.h */,
+				3A2F2572195D20DD00226DFF /* AppDelegate.m */,
 				3A2F256A195D20DD00226DFF /* SampleApp-Info.plist */,
 				3A2F256B195D20DD00226DFF /* InfoPlist.strings */,
 				3A2F256E195D20DD00226DFF /* main.m */,
@@ -311,13 +319,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A54D3781960AF1B00A5FE74 /* VENSeparatorView.m in Sources */,
+				3A1893A81961C654000397B6 /* VENTableViewCellSeparatorProvider.m in Sources */,
 				3A2F2579195D20DD00226DFF /* SampleViewController.m in Sources */,
-				3A54D3791960AF1B00A5FE74 /* VENTableViewCellSeparatorProvider.m in Sources */,
 				3A54D352195F8C3400A5FE74 /* SampleTableViewController.m in Sources */,
-				3A54D3771960AF1B00A5FE74 /* UITableViewCell+VENSeparatorView.m in Sources */,
-				3A2F2573195D20DD00226DFF /* VENAppDelegate.m in Sources */,
+				3A1893A71961C654000397B6 /* VENSeparatorView.m in Sources */,
+				3A2F2573195D20DD00226DFF /* AppDelegate.m in Sources */,
 				3A2F256F195D20DD00226DFF /* main.m in Sources */,
+				3A1893A61961C654000397B6 /* UITableViewCell+VENSeparatorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

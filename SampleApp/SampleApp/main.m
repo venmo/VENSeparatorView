@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "VENAppDelegate.h"
+#import "AppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([VENAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

@@ -1,4 +1,4 @@
 platform :ios, '6.0'
 
 pod 'ColorUtils', '~> 1.1.2'
-pod 'FrameAccessor', '~> 1.1.0'
+

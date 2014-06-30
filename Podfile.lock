@@ -1,0 +1,10 @@
+PODS:
+  - ColorUtils (1.1.2)
+
+DEPENDENCIES:
+  - ColorUtils (~> 1.1.2)
+
+SPEC CHECKSUMS:
+  ColorUtils: 2455988658eafc34f302a7d91113d7a9415d072c
+
+COCOAPODS: 0.33.1
