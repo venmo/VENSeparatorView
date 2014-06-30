@@ -15,8 +15,6 @@
 		3A54D3961961169500A5FE74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A54D3861961169500A5FE74 /* Foundation.framework */; };
 		3A54D3981961169500A5FE74 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A54D3971961169500A5FE74 /* UIKit.framework */; };
 		3A54D39B1961169500A5FE74 /* libVENSeparatorView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A54D3831961169500A5FE74 /* libVENSeparatorView.a */; };
-		3A54D3A11961169500A5FE74 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A54D39F1961169500A5FE74 /* InfoPlist.strings */; };
-		3A54D3A31961169500A5FE74 /* VENSeparatorViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A54D3A21961169500A5FE74 /* VENSeparatorViewTests.m */; };
 		3A54D3B71961AEEC00A5FE74 /* VENSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A54D3B61961AEEC00A5FE74 /* VENSeparatorView.m */; };
 		9FC7D7A99AF649CFAC719784 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E5F057E23E49E38BC34D6C /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -56,9 +54,6 @@
 		3A54D3931961169500A5FE74 /* VENSeparatorViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VENSeparatorViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A54D3941961169500A5FE74 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3A54D3971961169500A5FE74 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		3A54D39E1961169500A5FE74 /* VENSeparatorViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VENSeparatorViewTests-Info.plist"; sourceTree = "<group>"; };
-		3A54D3A01961169500A5FE74 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3A54D3A21961169500A5FE74 /* VENSeparatorViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VENSeparatorViewTests.m; sourceTree = "<group>"; };
 		3A54D3B51961AEEC00A5FE74 /* VENSeparatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VENSeparatorView.h; sourceTree = "<group>"; };
 		3A54D3B61961AEEC00A5FE74 /* VENSeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VENSeparatorView.m; sourceTree = "<group>"; };
 		C2E5F057E23E49E38BC34D6C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				3A54D3881961169500A5FE74 /* VENSeparatorView */,
-				3A54D39C1961169500A5FE74 /* VENSeparatorViewTests */,
 				3A54D3851961169500A5FE74 /* Frameworks */,
 				3A54D3841961169500A5FE74 /* Products */,
 				27FC641A4294412B88C7AE3C /* Pods.xcconfig */,
@@ -139,24 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				3A54D38A1961169500A5FE74 /* VENSeparatorView-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3A54D39C1961169500A5FE74 /* VENSeparatorViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				3A54D3A21961169500A5FE74 /* VENSeparatorViewTests.m */,
-				3A54D39D1961169500A5FE74 /* Supporting Files */,
-			);
-			path = VENSeparatorViewTests;
-			sourceTree = "<group>";
-		};
-		3A54D39D1961169500A5FE74 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3A54D39E1961169500A5FE74 /* VENSeparatorViewTests-Info.plist */,
-				3A54D39F1961169500A5FE74 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -233,7 +209,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A54D3A11961169500A5FE74 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A54D3A31961169500A5FE74 /* VENSeparatorViewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,17 +274,6 @@
 			targetProxy = 3A54D3991961169500A5FE74 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		3A54D39F1961169500A5FE74 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3A54D3A01961169500A5FE74 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3A54D3A41961169500A5FE74 /* Debug */ = {
