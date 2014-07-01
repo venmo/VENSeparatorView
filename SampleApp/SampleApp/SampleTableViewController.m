@@ -13,11 +13,9 @@
 {
     [super viewDidLoad];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.separatorProvider = [[VENSeparatorTableViewCellProvider alloc]
-                              initWithStrokeColor:[UIColor grayColor]
-                              fillColor:[UIColor lightGrayColor]
-                              borderWidth:0.5f
-                              delegate:self];
+    self.separatorProvider = [[VENSeparatorTableViewCellProvider alloc] initWithStrokeColor:[UIColor grayColor]
+                                                                                  fillColor:[UIColor lightGrayColor]
+                                                                                   delegate:self];
 }
 
 

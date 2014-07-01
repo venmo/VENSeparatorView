@@ -20,14 +20,12 @@
 
  @param strokeColor The color of the separator lines.
  @param fillColor The color of the jagged cells.
- @param borderWidth The width of the the separatorlines
  @param delegate The provider's delegate that conforms to the VENTableViewSeparatorProviderDelegate and UITableViewDataSource protocols.
 
  @return An initialized seperator provider.
  */
 - (instancetype)initWithStrokeColor:(UIColor *)strokeColor
                           fillColor:(UIColor *)fillColor
-                        borderWidth:(CGFloat)borderWidth
                            delegate:(id<VENSeparatorTableViewCellProviderDelegate, UITableViewDataSource>)delegate;
 
 

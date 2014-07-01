@@ -5,18 +5,19 @@
 
 @property (nonatomic, strong) UIColor *strokeColor;
 @property (nonatomic, strong) UIColor *fillColor;
-@property (nonatomic, assign) CGFloat borderWidth;
 
 @end
 
 @implementation VENSeparatorTableViewCellProvider
 
-- (instancetype)initWithStrokeColor:(UIColor *)strokeColor fillColor:(UIColor *)fillColor borderWidth:(CGFloat)borderWidth delegate:(id<VENSeparatorTableViewCellProviderDelegate, UITableViewDataSource>)delegate {
+- (instancetype)initWithStrokeColor:(UIColor *)strokeColor
+                          fillColor:(UIColor *)fillColor
+                           delegate:(id<VENSeparatorTableViewCellProviderDelegate, UITableViewDataSource>)delegate
+{
     self = [super init];
     if (self) {
         _strokeColor = strokeColor;
         _fillColor = fillColor;
-        _borderWidth = borderWidth;
         _delegate = delegate;
     }
     return self;
@@ -71,9 +72,9 @@
 
     VENSeparatorView *separatorView = [cell addTopLineSeparatorType:topType bottomLineSeparatorType:bottomType
                                                          cellHeight:estimatedHeight];
-    separatorView.strokeColor = self.strokeColor;
+    separatorView.topStrokeColor = (separatorView.topSeparatorType == VENSeparatorTypeJagged) ? self.fillColor : self.strokeColor;
+    separatorView.bottomStrokeColor = (separatorView.bottomSeparatorType == VENSeparatorTypeJagged) ? self.fillColor : self.strokeColor;
     separatorView.fillColor = self.fillColor;
-    separatorView.borderWidth = self.borderWidth;
     separatorView.backgroundColor = selfIsJagged ? self.fillColor : [UIColor clearColor];
 }
 

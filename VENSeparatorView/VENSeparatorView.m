@@ -23,7 +23,8 @@ static NSInteger DefaultJaggedEdgeVerticalVertexDistance = 5;
     return self;
 }
 
-- (void)setTopLineSeparatorType:(VENSeparatorType)topLineSeparatorType bottomLineSeparatorType:(VENSeparatorType)bottomLineSeparatorType
+- (void)setTopLineSeparatorType:(VENSeparatorType)topLineSeparatorType
+        bottomLineSeparatorType:(VENSeparatorType)bottomLineSeparatorType
 {
     self.topSeparatorType       = topLineSeparatorType;
     self.bottomSeparatorType    = bottomLineSeparatorType;
@@ -31,14 +32,25 @@ static NSInteger DefaultJaggedEdgeVerticalVertexDistance = 5;
 
 - (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
+
+    UIColor *topStrokeColor  = self.topStrokeColor ?: DefaultStrokeColor;
+    UIColor *bottomStrokeColor  = self.bottomStrokeColor ?: DefaultStrokeColor;
+
+    CGFloat topBorderWidth = self.topBorderWidth ?: DefaultBorderWidth;
+    CGFloat bottomBorderWidth = self.bottomBorderWidth ?: DefaultBorderWidth;
+
     switch (self.topSeparatorType) {
         case VENSeparatorTypeStraight:
             [self drawSeparatorAtPosition:VENSeparatorPositionTop
-                                     type:VENSeparatorTypeStraight];
+                                     type:VENSeparatorTypeStraight
+                              strokeColor:topStrokeColor
+                              borderWidth:topBorderWidth];
             break;
         case VENSeparatorTypeJagged:
             [self drawSeparatorAtPosition:VENSeparatorPositionTop
-                                     type:VENSeparatorTypeJagged];
+                                     type:VENSeparatorTypeJagged
+                              strokeColor:topStrokeColor
+                              borderWidth:topBorderWidth];
             break;
         default:
             break;
@@ -46,11 +58,15 @@ static NSInteger DefaultJaggedEdgeVerticalVertexDistance = 5;
     switch (self.bottomSeparatorType) {
         case VENSeparatorTypeStraight:
             [self drawSeparatorAtPosition:VENSeparatorPositionBottom
-                                     type:VENSeparatorTypeStraight];
+                                     type:VENSeparatorTypeStraight
+                              strokeColor:bottomStrokeColor
+                              borderWidth:bottomBorderWidth];
             break;
         case VENSeparatorTypeJagged:
             [self drawSeparatorAtPosition:VENSeparatorPositionBottom
-                                     type:VENSeparatorTypeJagged];
+                                     type:VENSeparatorTypeJagged
+                              strokeColor:bottomStrokeColor
+                              borderWidth:bottomBorderWidth];
             break;
         default:
             break;
@@ -59,10 +75,9 @@ static NSInteger DefaultJaggedEdgeVerticalVertexDistance = 5;
 
 - (void)drawSeparatorAtPosition:(VENSeparatorPosition)position
                            type:(VENSeparatorType)type
+                    strokeColor:(UIColor *)strokeColor
+                    borderWidth:(CGFloat)borderWidth
 {
-    UIColor *lineColor  = self.strokeColor ?: DefaultStrokeColor;
-    CGFloat borderWidth = self.borderWidth ?: DefaultBorderWidth;
-
     UIBezierPath *path = [UIBezierPath bezierPath];
     path.lineWidth = borderWidth;
     NSInteger x = 0;
@@ -99,7 +114,7 @@ static NSInteger DefaultJaggedEdgeVerticalVertexDistance = 5;
     x = -offSet;
     [path addLineToPoint:CGPointMake(x, y)];
 
-    [lineColor setStroke];
+    [strokeColor setStroke];
     [self drawBezierPath:path];
 }
 

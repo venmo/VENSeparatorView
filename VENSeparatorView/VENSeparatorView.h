@@ -19,9 +19,12 @@ typedef NS_ENUM(NSUInteger, VENSeparatorPosition) {
 @property (nonatomic, assign) NSUInteger jaggedEdgeVerticalVertexDistance;
 @property (nonatomic, assign) NSUInteger jaggedEdgeHorizontalVertexDistance;
 
-@property (nonatomic, assign) CGFloat borderWidth;
+@property (nonatomic, assign) CGFloat topBorderWidth;
+@property (nonatomic, assign) CGFloat bottomBorderWidth;
 
-@property (nonatomic, strong) UIColor *strokeColor;
+@property (nonatomic, strong) UIColor *topStrokeColor;
+@property (nonatomic, strong) UIColor *bottomStrokeColor;
+
 @property (nonatomic, strong) UIColor *fillColor;
 
 /**
