@@ -3,8 +3,8 @@ VENSeparatorView
 
 VENSeparatorView makes it easy create custom separators on iOS. It's used in the Venmo app to represent transfer stories.
 
-![alt text](http://i.imgur.com/5pPSKZO.jpg "RecipientView UIView Demo") - 
-![alt text](http://i.imgur.com/50EQ4S3.jpg "RecipientView UITableViewCell Demo")
+![alt text](http://i.imgur.com/50EQ4S3.jpg "SeparatorView UITableViewCell Demo") -
+![alt text](http://i.imgur.com/bdSTrWd.jpg "SeparatorView UIView Demo")
 
 Installation
 ------------
