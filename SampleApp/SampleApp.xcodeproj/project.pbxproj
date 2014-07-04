@@ -23,9 +23,12 @@
 		3A2F2583195D20DD00226DFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2F2562195D20DD00226DFF /* Foundation.framework */; };
 		3A2F2584195D20DD00226DFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2F2566195D20DD00226DFF /* UIKit.framework */; };
 		3A2F258C195D20DD00226DFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A2F258A195D20DD00226DFF /* InfoPlist.strings */; };
-		3A2F258E195D20DD00226DFF /* SampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2F258D195D20DD00226DFF /* SampleAppTests.m */; };
+		3A2F258E195D20DD00226DFF /* UITableViewCell+VENSeparatorViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2F258D195D20DD00226DFF /* UITableViewCell+VENSeparatorViewSpec.m */; };
 		3A54D352195F8C3400A5FE74 /* SampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A54D351195F8C3400A5FE74 /* SampleTableViewController.m */; };
 		3A64BB001966FF1A001D1D35 /* SampleSubclassSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A64BAFF1966FF1A001D1D35 /* SampleSubclassSeparatorView.m */; };
+		3A64BB0319673549001D1D35 /* VENSeparatorViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A64BB0219673549001D1D35 /* VENSeparatorViewSpec.m */; };
+		3A64BB0519673EF8001D1D35 /* VENSeparatorTableViewCellProviderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A64BB0419673EF8001D1D35 /* VENSeparatorTableViewCellProviderSpec.m */; };
+		3A64BB08196742DD001D1D35 /* SampleTableViewCellProviderDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A64BB07196742DD001D1D35 /* SampleTableViewCellProviderDelegate.m */; };
 		3DEB63DED8F74C28896D72FB /* libPods-SampleApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B52953B3124969BEA44EAB /* libPods-SampleApp.a */; };
 		8E79DDD2B962473B859CE1B2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC2D5250E7D40B783127C54 /* libPods.a */; };
 		B5FF73B4413F4EBC8BF4978F /* libPods-SampleAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D96C44EA7422EAFF7291D /* libPods-SampleAppTests.a */; };
@@ -68,11 +71,15 @@
 		3A2F2581195D20DD00226DFF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3A2F2589195D20DD00226DFF /* SampleAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleAppTests-Info.plist"; sourceTree = "<group>"; };
 		3A2F258B195D20DD00226DFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3A2F258D195D20DD00226DFF /* SampleAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleAppTests.m; sourceTree = "<group>"; };
+		3A2F258D195D20DD00226DFF /* UITableViewCell+VENSeparatorViewSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+VENSeparatorViewSpec.m"; sourceTree = "<group>"; };
 		3A54D350195F8C3400A5FE74 /* SampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleTableViewController.h; sourceTree = "<group>"; };
 		3A54D351195F8C3400A5FE74 /* SampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTableViewController.m; sourceTree = "<group>"; };
 		3A64BAFE1966FF1A001D1D35 /* SampleSubclassSeparatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleSubclassSeparatorView.h; sourceTree = "<group>"; };
 		3A64BAFF1966FF1A001D1D35 /* SampleSubclassSeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleSubclassSeparatorView.m; sourceTree = "<group>"; };
+		3A64BB0219673549001D1D35 /* VENSeparatorViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VENSeparatorViewSpec.m; sourceTree = "<group>"; };
+		3A64BB0419673EF8001D1D35 /* VENSeparatorTableViewCellProviderSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VENSeparatorTableViewCellProviderSpec.m; sourceTree = "<group>"; };
+		3A64BB06196742DD001D1D35 /* SampleTableViewCellProviderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleTableViewCellProviderDelegate.h; sourceTree = "<group>"; };
+		3A64BB07196742DD001D1D35 /* SampleTableViewCellProviderDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTableViewCellProviderDelegate.m; sourceTree = "<group>"; };
 		499AE4A63D4347039DD5CF1B /* Pods-SampleAppTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppTests.xcconfig"; path = "Pods/Pods-SampleAppTests.xcconfig"; sourceTree = "<group>"; };
 		637D3DD3A9CE4F06B995530E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		6706A3B4255C456C968D1F97 /* Pods-SampleApp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.xcconfig"; path = "Pods/Pods-SampleApp.xcconfig"; sourceTree = "<group>"; };
@@ -186,9 +193,10 @@
 		3A2F2587195D20DD00226DFF /* SampleAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				3A2F258D195D20DD00226DFF /* SampleAppTests.m */,
-				3A64BAFE1966FF1A001D1D35 /* SampleSubclassSeparatorView.h */,
-				3A64BAFF1966FF1A001D1D35 /* SampleSubclassSeparatorView.m */,
+				3A2F258D195D20DD00226DFF /* UITableViewCell+VENSeparatorViewSpec.m */,
+				3A64BB0419673EF8001D1D35 /* VENSeparatorTableViewCellProviderSpec.m */,
+				3A64BB0219673549001D1D35 /* VENSeparatorViewSpec.m */,
+				3A64BB0119673515001D1D35 /* Resources */,
 				3A2F2588195D20DD00226DFF /* Supporting Files */,
 			);
 			path = SampleAppTests;
@@ -201,6 +209,17 @@
 				3A2F258A195D20DD00226DFF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A64BB0119673515001D1D35 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3A64BB06196742DD001D1D35 /* SampleTableViewCellProviderDelegate.h */,
+				3A64BB07196742DD001D1D35 /* SampleTableViewCellProviderDelegate.m */,
+				3A64BAFE1966FF1A001D1D35 /* SampleSubclassSeparatorView.h */,
+				3A64BAFF1966FF1A001D1D35 /* SampleSubclassSeparatorView.m */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,7 +402,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A64BB001966FF1A001D1D35 /* SampleSubclassSeparatorView.m in Sources */,
-				3A2F258E195D20DD00226DFF /* SampleAppTests.m in Sources */,
+				3A64BB0519673EF8001D1D35 /* VENSeparatorTableViewCellProviderSpec.m in Sources */,
+				3A64BB0319673549001D1D35 /* VENSeparatorViewSpec.m in Sources */,
+				3A64BB08196742DD001D1D35 /* SampleTableViewCellProviderDelegate.m in Sources */,
+				3A2F258E195D20DD00226DFF /* UITableViewCell+VENSeparatorViewSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

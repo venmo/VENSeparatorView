@@ -23,10 +23,10 @@
     return self;
 }
 
-- (void)applySeparatorsToCell:(UITableViewCell *)cell
-                  atIndexPath:(NSIndexPath *)indexPath
-                  inTableView:(UITableView *)tableView
-                       height:(CGFloat)height
+- (VENSeparatorView *)applySeparatorsToCell:(UITableViewCell *)cell
+                                atIndexPath:(NSIndexPath *)indexPath
+                                inTableView:(UITableView *)tableView
+                                     cellHeight:(CGFloat)height
 {
     BOOL topIsJagged = NO;
     BOOL bottomIsJagged = NO;
@@ -76,6 +76,7 @@
     separatorView.bottomStrokeColor = (separatorView.bottomSeparatorType == VENSeparatorTypeJagged) ? self.fillColor : self.strokeColor;
     separatorView.fillColor = self.fillColor;
     separatorView.backgroundColor = selfIsJagged ? self.fillColor : [UIColor clearColor];
+    return separatorView;
 }
 
 @end
