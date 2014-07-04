@@ -35,12 +35,14 @@
         if ([firstSubview isKindOfClass:[VENSeparatorView class]]) {
             [firstSubview removeFromSuperview];
         }
-        CGRect separatorFrame = [self adjustedFrameForTopSeparatorType:topLineSeparatorType bottomSeparatorType:bottomLineSeparatorType cellHeight:height];
-        separatorView = [[separatorClass alloc] initWithFrame:separatorFrame
-                                         topLineSeparatorType:topLineSeparatorType
-                                      bottomLineSeparatorType:bottomLineSeparatorType];
-        separatorView.backgroundColor = [UIColor clearColor];
-        [self.contentView insertSubview:separatorView atIndex:0];
+        if ([separatorClass isSubclassOfClass:[VENSeparatorView class]]) {
+            CGRect separatorFrame = [self adjustedFrameForTopSeparatorType:topLineSeparatorType bottomSeparatorType:bottomLineSeparatorType cellHeight:height];
+            separatorView = [[separatorClass alloc] initWithFrame:separatorFrame
+                                             topLineSeparatorType:topLineSeparatorType
+                                          bottomLineSeparatorType:bottomLineSeparatorType];
+            separatorView.backgroundColor = [UIColor clearColor];
+            [self.contentView insertSubview:separatorView atIndex:0];
+        }
     }
     return separatorView;
 }

@@ -1,13 +1,16 @@
 PODS:
   - ColorUtils (1.1.2)
-  - FrameAccessor (1.1.0)
+  - Expecta (0.2.4)
+  - Specta (0.2.1)
 
 DEPENDENCIES:
   - ColorUtils (~> 1.1.2)
-  - FrameAccessor (~> 1.1.0)
+  - Expecta (~> 0.2)
+  - Specta (~> 0.2.1)
 
 SPEC CHECKSUMS:
   ColorUtils: 2455988658eafc34f302a7d91113d7a9415d072c
-  FrameAccessor: 1900268ec0c4872ce0948baaf71f995ea6d0f28c
+  Expecta: 112bcafa2304ee0f3c5e586505f24555a47b25d5
+  Specta: 9141310f46b1f68b676650ff2854e1ed0b74163a
 
 COCOAPODS: 0.33.1

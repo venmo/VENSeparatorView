@@ -39,12 +39,12 @@ typedef NS_ENUM(NSUInteger, VENSeparatorPosition) {
          topLineSeparatorType:(VENSeparatorType)topLineSeparatorType
       bottomLineSeparatorType:(VENSeparatorType)bottomLineSeparatorType;
 
+
 /**
  * Sets the top and bottom separator types of the reciever
 
  @param topLineSeparatorType The type of separator at the top of the separator view.
  @param bottomLineSeparatorType The type of separator at the bottom of the separator view.
-
  */
 - (void)setTopLineSeparatorType:(VENSeparatorType)topLineSeparatorType
         bottomLineSeparatorType:(VENSeparatorType)bottomLineSeparatorType;
