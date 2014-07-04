@@ -57,7 +57,7 @@ self.separatorProvider = [[VENSeparatorTableViewCellProvider alloc] initWithStro
                                                                                delegate:self];
 ```
 
-At the end of your data source's ```tableView:cellForRowAtIndexPath:``` method apply separators to the UITableViewCell with the VENSeparatorTableViewCellProvider's ```applySeparatorsToCell:atIndexPath:inTableView:height:``` 
+At the end of your data source's ```tableView:cellForRowAtIndexPath:``` method apply separators to the UITableViewCell with the VENSeparatorTableViewCellProvider's ```applySeparatorsToCell:atIndexPath:inTableView:cellHeight:``` 
 
 ```
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -65,7 +65,7 @@ At the end of your data source's ```tableView:cellForRowAtIndexPath:``` method a
 	UITableViewCell *cell;
 	// ...
 
-    [self.separatorProvider applySeparatorsToCell:cell atIndexPath:indexPath inTableView:tableView height:0];
+    [self.separatorProvider applySeparatorsToCell:cell atIndexPath:indexPath inTableView:tableView cellHeight:0];
     return cell;
 }
 ```
