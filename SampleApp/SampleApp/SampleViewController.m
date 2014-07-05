@@ -12,9 +12,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.separatorView setTopLineSeparatorType:VENSeparatorTypeStraight bottomLineSeparatorType:VENSeparatorTypeJagged];    
+    [self.separatorView setTopLineSeparatorType:VENSeparatorTypeStraight
+                        bottomLineSeparatorType:VENSeparatorTypeJagged];
+    self.separatorView.fillColor         = self.view.backgroundColor;
+    self.separatorView.topStrokeColor    = [UIColor blackColor];
+    self.separatorView.bottomStrokeColor = [UIColor blackColor];
 }
-
-
 
 @end

@@ -22,16 +22,7 @@
 		3A2F2582195D20DD00226DFF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2F2581195D20DD00226DFF /* XCTest.framework */; };
 		3A2F2583195D20DD00226DFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2F2562195D20DD00226DFF /* Foundation.framework */; };
 		3A2F2584195D20DD00226DFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2F2566195D20DD00226DFF /* UIKit.framework */; };
-		3A2F258C195D20DD00226DFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A2F258A195D20DD00226DFF /* InfoPlist.strings */; };
-		3A2F258E195D20DD00226DFF /* UITableViewCell+VENSeparatorViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2F258D195D20DD00226DFF /* UITableViewCell+VENSeparatorViewSpec.m */; };
 		3A54D352195F8C3400A5FE74 /* SampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A54D351195F8C3400A5FE74 /* SampleTableViewController.m */; };
-		3A64BB001966FF1A001D1D35 /* SampleSubclassSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A64BAFF1966FF1A001D1D35 /* SampleSubclassSeparatorView.m */; };
-		3A64BB0319673549001D1D35 /* VENSeparatorViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A64BB0219673549001D1D35 /* VENSeparatorViewSpec.m */; };
-		3A64BB0519673EF8001D1D35 /* VENSeparatorTableViewCellProviderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A64BB0419673EF8001D1D35 /* VENSeparatorTableViewCellProviderSpec.m */; };
-		3A64BB08196742DD001D1D35 /* SampleTableViewCellProviderDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A64BB07196742DD001D1D35 /* SampleTableViewCellProviderDelegate.m */; };
-		3DEB63DED8F74C28896D72FB /* libPods-SampleApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B52953B3124969BEA44EAB /* libPods-SampleApp.a */; };
-		8E79DDD2B962473B859CE1B2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC2D5250E7D40B783127C54 /* libPods.a */; };
-		B5FF73B4413F4EBC8BF4978F /* libPods-SampleAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 298D96C44EA7422EAFF7291D /* libPods-SampleAppTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1FC2D5250E7D40B783127C54 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		298D96C44EA7422EAFF7291D /* libPods-SampleAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SampleAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A1893A01961C654000397B6 /* UITableViewCell+VENSeparatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+VENSeparatorView.h"; path = "../../VENSeparatorView/UITableViewCell+VENSeparatorView.h"; sourceTree = "<group>"; };
 		3A1893A11961C654000397B6 /* UITableViewCell+VENSeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+VENSeparatorView.m"; path = "../../VENSeparatorView/UITableViewCell+VENSeparatorView.m"; sourceTree = "<group>"; };
 		3A1893A21961C654000397B6 /* VENSeparatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VENSeparatorView.h; path = ../../VENSeparatorView/VENSeparatorView.h; sourceTree = "<group>"; };
@@ -69,21 +58,8 @@
 		3A2F257A195D20DD00226DFF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3A2F2580195D20DD00226DFF /* SampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A2F2581195D20DD00226DFF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		3A2F2589195D20DD00226DFF /* SampleAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleAppTests-Info.plist"; sourceTree = "<group>"; };
-		3A2F258B195D20DD00226DFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3A2F258D195D20DD00226DFF /* UITableViewCell+VENSeparatorViewSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+VENSeparatorViewSpec.m"; sourceTree = "<group>"; };
 		3A54D350195F8C3400A5FE74 /* SampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleTableViewController.h; sourceTree = "<group>"; };
 		3A54D351195F8C3400A5FE74 /* SampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTableViewController.m; sourceTree = "<group>"; };
-		3A64BAFE1966FF1A001D1D35 /* SampleSubclassSeparatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleSubclassSeparatorView.h; sourceTree = "<group>"; };
-		3A64BAFF1966FF1A001D1D35 /* SampleSubclassSeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleSubclassSeparatorView.m; sourceTree = "<group>"; };
-		3A64BB0219673549001D1D35 /* VENSeparatorViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VENSeparatorViewSpec.m; sourceTree = "<group>"; };
-		3A64BB0419673EF8001D1D35 /* VENSeparatorTableViewCellProviderSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VENSeparatorTableViewCellProviderSpec.m; sourceTree = "<group>"; };
-		3A64BB06196742DD001D1D35 /* SampleTableViewCellProviderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleTableViewCellProviderDelegate.h; sourceTree = "<group>"; };
-		3A64BB07196742DD001D1D35 /* SampleTableViewCellProviderDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTableViewCellProviderDelegate.m; sourceTree = "<group>"; };
-		499AE4A63D4347039DD5CF1B /* Pods-SampleAppTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppTests.xcconfig"; path = "Pods/Pods-SampleAppTests.xcconfig"; sourceTree = "<group>"; };
-		637D3DD3A9CE4F06B995530E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		6706A3B4255C456C968D1F97 /* Pods-SampleApp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.xcconfig"; path = "Pods/Pods-SampleApp.xcconfig"; sourceTree = "<group>"; };
-		D9B52953B3124969BEA44EAB /* libPods-SampleApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SampleApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +70,6 @@
 				3A2F2565195D20DD00226DFF /* CoreGraphics.framework in Frameworks */,
 				3A2F2567195D20DD00226DFF /* UIKit.framework in Frameworks */,
 				3A2F2563195D20DD00226DFF /* Foundation.framework in Frameworks */,
-				8E79DDD2B962473B859CE1B2 /* libPods.a in Frameworks */,
-				3DEB63DED8F74C28896D72FB /* libPods-SampleApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +80,6 @@
 				3A2F2582195D20DD00226DFF /* XCTest.framework in Frameworks */,
 				3A2F2584195D20DD00226DFF /* UIKit.framework in Frameworks */,
 				3A2F2583195D20DD00226DFF /* Foundation.framework in Frameworks */,
-				B5FF73B4413F4EBC8BF4978F /* libPods-SampleAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,12 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				3A2F2568195D20DD00226DFF /* SampleApp */,
-				3A2F2587195D20DD00226DFF /* SampleAppTests */,
 				3A2F2561195D20DD00226DFF /* Frameworks */,
 				3A2F2560195D20DD00226DFF /* Products */,
-				637D3DD3A9CE4F06B995530E /* Pods.xcconfig */,
-				6706A3B4255C456C968D1F97 /* Pods-SampleApp.xcconfig */,
-				499AE4A63D4347039DD5CF1B /* Pods-SampleAppTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,9 +124,6 @@
 				3A2F2564195D20DD00226DFF /* CoreGraphics.framework */,
 				3A2F2566195D20DD00226DFF /* UIKit.framework */,
 				3A2F2581195D20DD00226DFF /* XCTest.framework */,
-				1FC2D5250E7D40B783127C54 /* libPods.a */,
-				D9B52953B3124969BEA44EAB /* libPods-SampleApp.a */,
-				298D96C44EA7422EAFF7291D /* libPods-SampleAppTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -190,38 +156,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3A2F2587195D20DD00226DFF /* SampleAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				3A2F258D195D20DD00226DFF /* UITableViewCell+VENSeparatorViewSpec.m */,
-				3A64BB0419673EF8001D1D35 /* VENSeparatorTableViewCellProviderSpec.m */,
-				3A64BB0219673549001D1D35 /* VENSeparatorViewSpec.m */,
-				3A64BB0119673515001D1D35 /* Resources */,
-				3A2F2588195D20DD00226DFF /* Supporting Files */,
-			);
-			path = SampleAppTests;
-			sourceTree = "<group>";
-		};
-		3A2F2588195D20DD00226DFF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3A2F2589195D20DD00226DFF /* SampleAppTests-Info.plist */,
-				3A2F258A195D20DD00226DFF /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3A64BB0119673515001D1D35 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				3A64BB06196742DD001D1D35 /* SampleTableViewCellProviderDelegate.h */,
-				3A64BB07196742DD001D1D35 /* SampleTableViewCellProviderDelegate.m */,
-				3A64BAFE1966FF1A001D1D35 /* SampleSubclassSeparatorView.h */,
-				3A64BAFF1966FF1A001D1D35 /* SampleSubclassSeparatorView.m */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -229,11 +163,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A2F2591195D20DD00226DFF /* Build configuration list for PBXNativeTarget "SampleApp" */;
 			buildPhases = (
-				63219205B9D147FA801E644B /* Check Pods Manifest.lock */,
 				3A2F255B195D20DD00226DFF /* Sources */,
 				3A2F255C195D20DD00226DFF /* Frameworks */,
 				3A2F255D195D20DD00226DFF /* Resources */,
-				C053DA106B2A40F28E080326 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -313,7 +245,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A2F258C195D20DD00226DFF /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,36 +264,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-SampleAppTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		63219205B9D147FA801E644B /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		C053DA106B2A40F28E080326 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-SampleApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FEFAC7AE70CD4A5CA9AB8D22 /* Check Pods Manifest.lock */ = {
@@ -401,11 +302,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A64BB001966FF1A001D1D35 /* SampleSubclassSeparatorView.m in Sources */,
-				3A64BB0519673EF8001D1D35 /* VENSeparatorTableViewCellProviderSpec.m in Sources */,
-				3A64BB0319673549001D1D35 /* VENSeparatorViewSpec.m in Sources */,
-				3A64BB08196742DD001D1D35 /* SampleTableViewCellProviderDelegate.m in Sources */,
-				3A2F258E195D20DD00226DFF /* UITableViewCell+VENSeparatorViewSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,14 +330,6 @@
 				3A2F2575195D20DD00226DFF /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3A2F258A195D20DD00226DFF /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3A2F258B195D20DD00226DFF /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -519,7 +407,6 @@
 		};
 		3A2F2592195D20DD00226DFF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6706A3B4255C456C968D1F97 /* Pods-SampleApp.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -535,7 +422,6 @@
 		};
 		3A2F2593195D20DD00226DFF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6706A3B4255C456C968D1F97 /* Pods-SampleApp.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -551,7 +437,6 @@
 		};
 		3A2F2595195D20DD00226DFF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 499AE4A63D4347039DD5CF1B /* Pods-SampleAppTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SampleApp.app/SampleApp";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -574,7 +459,6 @@
 		};
 		3A2F2596195D20DD00226DFF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 499AE4A63D4347039DD5CF1B /* Pods-SampleAppTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SampleApp.app/SampleApp";
 				FRAMEWORK_SEARCH_PATHS = (

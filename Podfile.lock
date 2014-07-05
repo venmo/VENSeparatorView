@@ -1,10 +1,16 @@
 PODS:
-  - ColorUtils (1.1.2)
+  - Expecta (0.3.1)
+  - OCMock (2.2.4)
+  - Specta (0.2.1)
 
 DEPENDENCIES:
-  - ColorUtils (~> 1.1.2)
+  - Expecta (~> 0.2)
+  - OCMock (~> 2.2.2)
+  - Specta (~> 0.2.1)
 
 SPEC CHECKSUMS:
-  ColorUtils: 2455988658eafc34f302a7d91113d7a9415d072c
+  Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
+  OCMock: 6db79185520e24f9f299548f2b8b07e41d881bd5
+  Specta: 9141310f46b1f68b676650ff2854e1ed0b74163a
 
 COCOAPODS: 0.33.1

@@ -1,8 +1,7 @@
 #import "VENSeparatorView.h"
-#import "ColorUtils.h"
 
-#define DefaultFillColor self.superview.backgroundColor
-#define DefaultStrokeColor [self.superview.backgroundColor colorWithBrightness:0.25f]
+#define DefaultFillColor [UIColor lightGrayColor]
+#define DefaultStrokeColor [UIColor grayColor]
 
 static CGFloat DefaultBorderWidth = 0.50f;
 static NSInteger DefaultJaggedEdgeHorizontalVertexDistance = 6;

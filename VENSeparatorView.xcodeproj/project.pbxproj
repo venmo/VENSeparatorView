@@ -7,148 +7,200 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A18939B1961C456000397B6 /* UITableViewCell+VENSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1893981961C456000397B6 /* UITableViewCell+VENSeparatorView.m */; };
-		3A18939E1961C4CF000397B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A18939D1961C4CF000397B6 /* UIKit.framework */; };
-		3A1893C419627034000397B6 /* UITableViewCell+VENSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1893C319627034000397B6 /* UITableViewCell+VENSeparatorView.m */; };
-		3A54D3871961169500A5FE74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A54D3861961169500A5FE74 /* Foundation.framework */; };
-		3A54D3951961169500A5FE74 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A54D3941961169500A5FE74 /* XCTest.framework */; };
-		3A54D3961961169500A5FE74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A54D3861961169500A5FE74 /* Foundation.framework */; };
-		3A54D3981961169500A5FE74 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A54D3971961169500A5FE74 /* UIKit.framework */; };
-		3A54D39B1961169500A5FE74 /* libVENSeparatorView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A54D3831961169500A5FE74 /* libVENSeparatorView.a */; };
-		3A54D3B71961AEEC00A5FE74 /* VENSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A54D3B61961AEEC00A5FE74 /* VENSeparatorView.m */; };
-		9FC7D7A99AF649CFAC719784 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E5F057E23E49E38BC34D6C /* libPods.a */; };
+		290A4846021A41AE831A9415 /* libPods-VENSeparatorViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F551572082A4A7EB48C5F38 /* libPods-VENSeparatorViewTests.a */; };
+		3A64BB161967BBD4001D1D35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A64BB151967BBD4001D1D35 /* Foundation.framework */; };
+		3A64BB1B1967BBD4001D1D35 /* VENSeparatorView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A64BB1A1967BBD4001D1D35 /* VENSeparatorView.h */; };
+		3A64BB1D1967BBD4001D1D35 /* VENSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A64BB1C1967BBD4001D1D35 /* VENSeparatorView.m */; };
+		3A64BB241967BBD4001D1D35 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A64BB231967BBD4001D1D35 /* XCTest.framework */; };
+		3A64BB251967BBD4001D1D35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A64BB151967BBD4001D1D35 /* Foundation.framework */; };
+		3A64BB271967BBD4001D1D35 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A64BB261967BBD4001D1D35 /* UIKit.framework */; };
+		3A64BB2A1967BBD4001D1D35 /* libVENSeparatorView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A64BB121967BBD4001D1D35 /* libVENSeparatorView.a */; };
+		3A64BB301967BBD4001D1D35 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A64BB2E1967BBD4001D1D35 /* InfoPlist.strings */; };
+		3A64BB3D1967BC2F001D1D35 /* UITableViewCell+VENSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A64BB3C1967BC2F001D1D35 /* UITableViewCell+VENSeparatorView.m */; };
+		3A64BB401967BC48001D1D35 /* VENSeparatorTableViewCellProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A64BB3F1967BC48001D1D35 /* VENSeparatorTableViewCellProvider.m */; };
+		3A64BB461967BCAF001D1D35 /* SampleSubclassSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A64BB431967BCAF001D1D35 /* SampleSubclassSeparatorView.m */; };
+		3A64BB471967BCAF001D1D35 /* SampleTableViewCellProviderDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A64BB451967BCAF001D1D35 /* SampleTableViewCellProviderDelegate.m */; };
+		3A64BB4B1967BCBA001D1D35 /* UITableViewCell+VENSeparatorViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A64BB481967BCBA001D1D35 /* UITableViewCell+VENSeparatorViewSpec.m */; };
+		3A64BB4C1967BCBA001D1D35 /* VENSeparatorTableViewCellProviderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A64BB491967BCBA001D1D35 /* VENSeparatorTableViewCellProviderSpec.m */; };
+		3A64BB4D1967BCBA001D1D35 /* VENSeparatorViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A64BB4A1967BCBA001D1D35 /* VENSeparatorViewSpec.m */; };
+		D10691BF989F4029B8BD2251 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F3296A59F4D4F54A4047840 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3A54D3991961169500A5FE74 /* PBXContainerItemProxy */ = {
+		3A64BB281967BBD4001D1D35 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3A54D37B1961169500A5FE74 /* Project object */;
+			containerPortal = 3A64BB0A1967BBD4001D1D35 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3A54D3821961169500A5FE74;
+			remoteGlobalIDString = 3A64BB111967BBD4001D1D35;
 			remoteInfo = VENSeparatorView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		3A54D3811961169500A5FE74 /* CopyFiles */ = {
+		3A64BB101967BBD4001D1D35 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				3A64BB1B1967BBD4001D1D35 /* VENSeparatorView.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		27FC641A4294412B88C7AE3C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		3A1893971961C456000397B6 /* UITableViewCell+VENSeparatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+VENSeparatorView.h"; sourceTree = "<group>"; };
-		3A1893981961C456000397B6 /* UITableViewCell+VENSeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+VENSeparatorView.m"; sourceTree = "<group>"; };
-		3A18939D1961C4CF000397B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		3A1893C219627034000397B6 /* UITableViewCell+VENSeparatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+VENSeparatorView.h"; sourceTree = "<group>"; };
-		3A1893C319627034000397B6 /* UITableViewCell+VENSeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+VENSeparatorView.m"; sourceTree = "<group>"; };
-		3A54D3831961169500A5FE74 /* libVENSeparatorView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVENSeparatorView.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A54D3861961169500A5FE74 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		3A54D38A1961169500A5FE74 /* VENSeparatorView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VENSeparatorView-Prefix.pch"; sourceTree = "<group>"; };
-		3A54D3931961169500A5FE74 /* VENSeparatorViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VENSeparatorViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A54D3941961169500A5FE74 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		3A54D3971961169500A5FE74 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		3A54D3B51961AEEC00A5FE74 /* VENSeparatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VENSeparatorView.h; sourceTree = "<group>"; };
-		3A54D3B61961AEEC00A5FE74 /* VENSeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VENSeparatorView.m; sourceTree = "<group>"; };
-		C2E5F057E23E49E38BC34D6C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A64BB121967BBD4001D1D35 /* libVENSeparatorView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVENSeparatorView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A64BB151967BBD4001D1D35 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3A64BB191967BBD4001D1D35 /* VENSeparatorView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VENSeparatorView-Prefix.pch"; sourceTree = "<group>"; };
+		3A64BB1A1967BBD4001D1D35 /* VENSeparatorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VENSeparatorView.h; sourceTree = "<group>"; };
+		3A64BB1C1967BBD4001D1D35 /* VENSeparatorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VENSeparatorView.m; sourceTree = "<group>"; };
+		3A64BB221967BBD4001D1D35 /* VENSeparatorViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VENSeparatorViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A64BB231967BBD4001D1D35 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3A64BB261967BBD4001D1D35 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3A64BB2D1967BBD4001D1D35 /* VENSeparatorViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VENSeparatorViewTests-Info.plist"; sourceTree = "<group>"; };
+		3A64BB2F1967BBD4001D1D35 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3A64BB3B1967BC2F001D1D35 /* UITableViewCell+VENSeparatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+VENSeparatorView.h"; sourceTree = "<group>"; };
+		3A64BB3C1967BC2F001D1D35 /* UITableViewCell+VENSeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+VENSeparatorView.m"; sourceTree = "<group>"; };
+		3A64BB3E1967BC48001D1D35 /* VENSeparatorTableViewCellProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VENSeparatorTableViewCellProvider.h; sourceTree = "<group>"; };
+		3A64BB3F1967BC48001D1D35 /* VENSeparatorTableViewCellProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VENSeparatorTableViewCellProvider.m; sourceTree = "<group>"; };
+		3A64BB421967BCAF001D1D35 /* SampleSubclassSeparatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleSubclassSeparatorView.h; path = Resources/SampleSubclassSeparatorView.h; sourceTree = "<group>"; };
+		3A64BB431967BCAF001D1D35 /* SampleSubclassSeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SampleSubclassSeparatorView.m; path = Resources/SampleSubclassSeparatorView.m; sourceTree = "<group>"; };
+		3A64BB441967BCAF001D1D35 /* SampleTableViewCellProviderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleTableViewCellProviderDelegate.h; path = Resources/SampleTableViewCellProviderDelegate.h; sourceTree = "<group>"; };
+		3A64BB451967BCAF001D1D35 /* SampleTableViewCellProviderDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SampleTableViewCellProviderDelegate.m; path = Resources/SampleTableViewCellProviderDelegate.m; sourceTree = "<group>"; };
+		3A64BB481967BCBA001D1D35 /* UITableViewCell+VENSeparatorViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+VENSeparatorViewSpec.m"; sourceTree = "<group>"; };
+		3A64BB491967BCBA001D1D35 /* VENSeparatorTableViewCellProviderSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VENSeparatorTableViewCellProviderSpec.m; sourceTree = "<group>"; };
+		3A64BB4A1967BCBA001D1D35 /* VENSeparatorViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VENSeparatorViewSpec.m; sourceTree = "<group>"; };
+		5F551572082A4A7EB48C5F38 /* libPods-VENSeparatorViewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VENSeparatorViewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F3296A59F4D4F54A4047840 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		870F55564B4A4767ADEC2517 /* Pods-VENSeparatorViewTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VENSeparatorViewTests.xcconfig"; path = "Pods/Pods-VENSeparatorViewTests.xcconfig"; sourceTree = "<group>"; };
+		EE250128D24D45CC8EF135F9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3A54D3801961169500A5FE74 /* Frameworks */ = {
+		3A64BB0F1967BBD4001D1D35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A18939E1961C4CF000397B6 /* UIKit.framework in Frameworks */,
-				3A54D3871961169500A5FE74 /* Foundation.framework in Frameworks */,
-				9FC7D7A99AF649CFAC719784 /* libPods.a in Frameworks */,
+				3A64BB161967BBD4001D1D35 /* Foundation.framework in Frameworks */,
+				D10691BF989F4029B8BD2251 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3A54D3901961169500A5FE74 /* Frameworks */ = {
+		3A64BB1F1967BBD4001D1D35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A54D39B1961169500A5FE74 /* libVENSeparatorView.a in Frameworks */,
-				3A54D3951961169500A5FE74 /* XCTest.framework in Frameworks */,
-				3A54D3981961169500A5FE74 /* UIKit.framework in Frameworks */,
-				3A54D3961961169500A5FE74 /* Foundation.framework in Frameworks */,
+				3A64BB2A1967BBD4001D1D35 /* libVENSeparatorView.a in Frameworks */,
+				3A64BB241967BBD4001D1D35 /* XCTest.framework in Frameworks */,
+				3A64BB271967BBD4001D1D35 /* UIKit.framework in Frameworks */,
+				3A64BB251967BBD4001D1D35 /* Foundation.framework in Frameworks */,
+				290A4846021A41AE831A9415 /* libPods-VENSeparatorViewTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3A54D37A1961169500A5FE74 = {
+		3A64BB091967BBD4001D1D35 = {
 			isa = PBXGroup;
 			children = (
-				3A54D3881961169500A5FE74 /* VENSeparatorView */,
-				3A54D3851961169500A5FE74 /* Frameworks */,
-				3A54D3841961169500A5FE74 /* Products */,
-				27FC641A4294412B88C7AE3C /* Pods.xcconfig */,
+				3A64BB171967BBD4001D1D35 /* VENSeparatorView */,
+				3A64BB2B1967BBD4001D1D35 /* VENSeparatorViewTests */,
+				3A64BB141967BBD4001D1D35 /* Frameworks */,
+				3A64BB131967BBD4001D1D35 /* Products */,
+				EE250128D24D45CC8EF135F9 /* Pods.xcconfig */,
+				870F55564B4A4767ADEC2517 /* Pods-VENSeparatorViewTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
-		3A54D3841961169500A5FE74 /* Products */ = {
+		3A64BB131967BBD4001D1D35 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3A54D3831961169500A5FE74 /* libVENSeparatorView.a */,
-				3A54D3931961169500A5FE74 /* VENSeparatorViewTests.xctest */,
+				3A64BB121967BBD4001D1D35 /* libVENSeparatorView.a */,
+				3A64BB221967BBD4001D1D35 /* VENSeparatorViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3A54D3851961169500A5FE74 /* Frameworks */ = {
+		3A64BB141967BBD4001D1D35 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3A18939D1961C4CF000397B6 /* UIKit.framework */,
-				3A54D3861961169500A5FE74 /* Foundation.framework */,
-				3A54D3941961169500A5FE74 /* XCTest.framework */,
-				3A54D3971961169500A5FE74 /* UIKit.framework */,
-				C2E5F057E23E49E38BC34D6C /* libPods.a */,
+				3A64BB151967BBD4001D1D35 /* Foundation.framework */,
+				3A64BB231967BBD4001D1D35 /* XCTest.framework */,
+				3A64BB261967BBD4001D1D35 /* UIKit.framework */,
+				7F3296A59F4D4F54A4047840 /* libPods.a */,
+				5F551572082A4A7EB48C5F38 /* libPods-VENSeparatorViewTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3A54D3881961169500A5FE74 /* VENSeparatorView */ = {
+		3A64BB171967BBD4001D1D35 /* VENSeparatorView */ = {
 			isa = PBXGroup;
 			children = (
-				3A54D3B51961AEEC00A5FE74 /* VENSeparatorView.h */,
-				3A54D3B61961AEEC00A5FE74 /* VENSeparatorView.m */,
-				3A1893971961C456000397B6 /* UITableViewCell+VENSeparatorView.h */,
-				3A1893981961C456000397B6 /* UITableViewCell+VENSeparatorView.m */,
-				3A1893C219627034000397B6 /* UITableViewCell+VENSeparatorView.h */,
-				3A1893C319627034000397B6 /* UITableViewCell+VENSeparatorView.m */,
-				3A54D3891961169500A5FE74 /* Supporting Files */,
+				3A64BB1A1967BBD4001D1D35 /* VENSeparatorView.h */,
+				3A64BB1C1967BBD4001D1D35 /* VENSeparatorView.m */,
+				3A64BB3B1967BC2F001D1D35 /* UITableViewCell+VENSeparatorView.h */,
+				3A64BB3C1967BC2F001D1D35 /* UITableViewCell+VENSeparatorView.m */,
+				3A64BB3E1967BC48001D1D35 /* VENSeparatorTableViewCellProvider.h */,
+				3A64BB3F1967BC48001D1D35 /* VENSeparatorTableViewCellProvider.m */,
+				3A64BB181967BBD4001D1D35 /* Supporting Files */,
 			);
 			path = VENSeparatorView;
 			sourceTree = "<group>";
 		};
-		3A54D3891961169500A5FE74 /* Supporting Files */ = {
+		3A64BB181967BBD4001D1D35 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3A54D38A1961169500A5FE74 /* VENSeparatorView-Prefix.pch */,
+				3A64BB191967BBD4001D1D35 /* VENSeparatorView-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A64BB2B1967BBD4001D1D35 /* VENSeparatorViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A64BB4A1967BCBA001D1D35 /* VENSeparatorViewSpec.m */,
+				3A64BB481967BCBA001D1D35 /* UITableViewCell+VENSeparatorViewSpec.m */,
+				3A64BB491967BCBA001D1D35 /* VENSeparatorTableViewCellProviderSpec.m */,
+				3A64BB411967BCA5001D1D35 /* Resources */,
+				3A64BB2C1967BBD4001D1D35 /* Supporting Files */,
+			);
+			path = VENSeparatorViewTests;
+			sourceTree = "<group>";
+		};
+		3A64BB2C1967BBD4001D1D35 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A64BB2D1967BBD4001D1D35 /* VENSeparatorViewTests-Info.plist */,
+				3A64BB2E1967BBD4001D1D35 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A64BB411967BCA5001D1D35 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3A64BB421967BCAF001D1D35 /* SampleSubclassSeparatorView.h */,
+				3A64BB431967BCAF001D1D35 /* SampleSubclassSeparatorView.m */,
+				3A64BB441967BCAF001D1D35 /* SampleTableViewCellProviderDelegate.h */,
+				3A64BB451967BCAF001D1D35 /* SampleTableViewCellProviderDelegate.m */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3A54D3821961169500A5FE74 /* VENSeparatorView */ = {
+		3A64BB111967BBD4001D1D35 /* VENSeparatorView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A54D3A61961169500A5FE74 /* Build configuration list for PBXNativeTarget "VENSeparatorView" */;
+			buildConfigurationList = 3A64BB351967BBD4001D1D35 /* Build configuration list for PBXNativeTarget "VENSeparatorView" */;
 			buildPhases = (
-				6AC404F06B0240209BC3B95D /* Check Pods Manifest.lock */,
-				3A54D37F1961169500A5FE74 /* Sources */,
-				3A54D3801961169500A5FE74 /* Frameworks */,
-				3A54D3811961169500A5FE74 /* CopyFiles */,
-				F857F97E03024B7CA2A032FB /* Copy Pods Resources */,
+				1CE77A18E63640A3887F4E63 /* Check Pods Manifest.lock */,
+				3A64BB0E1967BBD4001D1D35 /* Sources */,
+				3A64BB0F1967BBD4001D1D35 /* Frameworks */,
+				3A64BB101967BBD4001D1D35 /* CopyFiles */,
+				949415F8BE1347748E9E12D6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,66 +208,69 @@
 			);
 			name = VENSeparatorView;
 			productName = VENSeparatorView;
-			productReference = 3A54D3831961169500A5FE74 /* libVENSeparatorView.a */;
+			productReference = 3A64BB121967BBD4001D1D35 /* libVENSeparatorView.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		3A54D3921961169500A5FE74 /* VENSeparatorViewTests */ = {
+		3A64BB211967BBD4001D1D35 /* VENSeparatorViewTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A54D3A91961169500A5FE74 /* Build configuration list for PBXNativeTarget "VENSeparatorViewTests" */;
+			buildConfigurationList = 3A64BB381967BBD4001D1D35 /* Build configuration list for PBXNativeTarget "VENSeparatorViewTests" */;
 			buildPhases = (
-				3A54D38F1961169500A5FE74 /* Sources */,
-				3A54D3901961169500A5FE74 /* Frameworks */,
-				3A54D3911961169500A5FE74 /* Resources */,
+				76A879621FC045CCAB1B81C1 /* Check Pods Manifest.lock */,
+				3A64BB1E1967BBD4001D1D35 /* Sources */,
+				3A64BB1F1967BBD4001D1D35 /* Frameworks */,
+				3A64BB201967BBD4001D1D35 /* Resources */,
+				42EF0DFFCC4C40A4A5D61DB4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3A54D39A1961169500A5FE74 /* PBXTargetDependency */,
+				3A64BB291967BBD4001D1D35 /* PBXTargetDependency */,
 			);
 			name = VENSeparatorViewTests;
 			productName = VENSeparatorViewTests;
-			productReference = 3A54D3931961169500A5FE74 /* VENSeparatorViewTests.xctest */;
+			productReference = 3A64BB221967BBD4001D1D35 /* VENSeparatorViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3A54D37B1961169500A5FE74 /* Project object */ = {
+		3A64BB0A1967BBD4001D1D35 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Venmo;
 			};
-			buildConfigurationList = 3A54D37E1961169500A5FE74 /* Build configuration list for PBXProject "VENSeparatorView" */;
+			buildConfigurationList = 3A64BB0D1967BBD4001D1D35 /* Build configuration list for PBXProject "VENSeparatorView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 3A54D37A1961169500A5FE74;
-			productRefGroup = 3A54D3841961169500A5FE74 /* Products */;
+			mainGroup = 3A64BB091967BBD4001D1D35;
+			productRefGroup = 3A64BB131967BBD4001D1D35 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3A54D3821961169500A5FE74 /* VENSeparatorView */,
-				3A54D3921961169500A5FE74 /* VENSeparatorViewTests */,
+				3A64BB111967BBD4001D1D35 /* VENSeparatorView */,
+				3A64BB211967BBD4001D1D35 /* VENSeparatorViewTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3A54D3911961169500A5FE74 /* Resources */ = {
+		3A64BB201967BBD4001D1D35 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A64BB301967BBD4001D1D35 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6AC404F06B0240209BC3B95D /* Check Pods Manifest.lock */ = {
+		1CE77A18E63640A3887F4E63 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -230,7 +285,37 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		F857F97E03024B7CA2A032FB /* Copy Pods Resources */ = {
+		42EF0DFFCC4C40A4A5D61DB4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-VENSeparatorViewTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76A879621FC045CCAB1B81C1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		949415F8BE1347748E9E12D6 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -248,35 +333,51 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3A54D37F1961169500A5FE74 /* Sources */ = {
+		3A64BB0E1967BBD4001D1D35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A18939B1961C456000397B6 /* UITableViewCell+VENSeparatorView.m in Sources */,
-				3A1893C419627034000397B6 /* UITableViewCell+VENSeparatorView.m in Sources */,
-				3A54D3B71961AEEC00A5FE74 /* VENSeparatorView.m in Sources */,
+				3A64BB3D1967BC2F001D1D35 /* UITableViewCell+VENSeparatorView.m in Sources */,
+				3A64BB1D1967BBD4001D1D35 /* VENSeparatorView.m in Sources */,
+				3A64BB401967BC48001D1D35 /* VENSeparatorTableViewCellProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3A54D38F1961169500A5FE74 /* Sources */ = {
+		3A64BB1E1967BBD4001D1D35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A64BB4B1967BCBA001D1D35 /* UITableViewCell+VENSeparatorViewSpec.m in Sources */,
+				3A64BB4C1967BCBA001D1D35 /* VENSeparatorTableViewCellProviderSpec.m in Sources */,
+				3A64BB461967BCAF001D1D35 /* SampleSubclassSeparatorView.m in Sources */,
+				3A64BB471967BCAF001D1D35 /* SampleTableViewCellProviderDelegate.m in Sources */,
+				3A64BB4D1967BCBA001D1D35 /* VENSeparatorViewSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3A54D39A1961169500A5FE74 /* PBXTargetDependency */ = {
+		3A64BB291967BBD4001D1D35 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3A54D3821961169500A5FE74 /* VENSeparatorView */;
-			targetProxy = 3A54D3991961169500A5FE74 /* PBXContainerItemProxy */;
+			target = 3A64BB111967BBD4001D1D35 /* VENSeparatorView */;
+			targetProxy = 3A64BB281967BBD4001D1D35 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		3A64BB2E1967BBD4001D1D35 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A64BB2F1967BBD4001D1D35 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		3A54D3A41961169500A5FE74 /* Debug */ = {
+		3A64BB331967BBD4001D1D35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -313,7 +414,7 @@
 			};
 			name = Debug;
 		};
-		3A54D3A51961169500A5FE74 /* Release */ = {
+		3A64BB341967BBD4001D1D35 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -344,34 +445,35 @@
 			};
 			name = Release;
 		};
-		3A54D3A71961169500A5FE74 /* Debug */ = {
+		3A64BB361967BBD4001D1D35 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27FC641A4294412B88C7AE3C /* Pods.xcconfig */;
+			baseConfigurationReference = EE250128D24D45CC8EF135F9 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/VENSeparatorView.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VENSeparatorView/VENSeparatorView-Prefix.pch";
-				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		3A54D3A81961169500A5FE74 /* Release */ = {
+		3A64BB371967BBD4001D1D35 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27FC641A4294412B88C7AE3C /* Pods.xcconfig */;
+			baseConfigurationReference = EE250128D24D45CC8EF135F9 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/VENSeparatorView.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VENSeparatorView/VENSeparatorView-Prefix.pch";
-				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		3A54D3AA1961169500A5FE74 /* Debug */ = {
+		3A64BB391967BBD4001D1D35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 870F55564B4A4767ADEC2517 /* Pods-VENSeparatorViewTests.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -390,8 +492,9 @@
 			};
 			name = Debug;
 		};
-		3A54D3AB1961169500A5FE74 /* Release */ = {
+		3A64BB3A1967BBD4001D1D35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 870F55564B4A4767ADEC2517 /* Pods-VENSeparatorViewTests.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -409,34 +512,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3A54D37E1961169500A5FE74 /* Build configuration list for PBXProject "VENSeparatorView" */ = {
+		3A64BB0D1967BBD4001D1D35 /* Build configuration list for PBXProject "VENSeparatorView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3A54D3A41961169500A5FE74 /* Debug */,
-				3A54D3A51961169500A5FE74 /* Release */,
+				3A64BB331967BBD4001D1D35 /* Debug */,
+				3A64BB341967BBD4001D1D35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3A54D3A61961169500A5FE74 /* Build configuration list for PBXNativeTarget "VENSeparatorView" */ = {
+		3A64BB351967BBD4001D1D35 /* Build configuration list for PBXNativeTarget "VENSeparatorView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3A54D3A71961169500A5FE74 /* Debug */,
-				3A54D3A81961169500A5FE74 /* Release */,
+				3A64BB361967BBD4001D1D35 /* Debug */,
+				3A64BB371967BBD4001D1D35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3A54D3A91961169500A5FE74 /* Build configuration list for PBXNativeTarget "VENSeparatorViewTests" */ = {
+		3A64BB381967BBD4001D1D35 /* Build configuration list for PBXNativeTarget "VENSeparatorViewTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3A54D3AA1961169500A5FE74 /* Debug */,
-				3A54D3AB1961169500A5FE74 /* Release */,
+				3A64BB391967BBD4001D1D35 /* Debug */,
+				3A64BB3A1967BBD4001D1D35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3A54D37B1961169500A5FE74 /* Project object */;
+	rootObject = 3A64BB0A1967BBD4001D1D35 /* Project object */;
 }

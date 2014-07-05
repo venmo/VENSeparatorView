@@ -90,5 +90,4 @@ describe(@"applySeparatorsToCell:atIndexPath:inTableView:cellHeight:", ^{
 
 });
 
-
 SpecEnd
