@@ -5,8 +5,3 @@ target 'VENSeparatorViewTests', :exclusive => true do
   pod 'Expecta', '~>0.2'
   pod 'OCMock', '~>2.2.2'
 end
-
-
-
-
-
