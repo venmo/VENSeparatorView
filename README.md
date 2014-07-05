@@ -1,5 +1,7 @@
 VENSeparatorView
 =============
+[![Build Status](https://travis-ci.org/venmo/VENSeparatorView.svg?branch=master)](https://travis-ci.org/venmo/VENSeparatorView)
+
 
 VENSeparatorView makes it easy create custom separators on iOS. It's used in the Venmo app to represent transfer stories.
 
@@ -28,8 +30,8 @@ VENSeparatorTypeJagged,
 VENSeparatorTypeNone
 ```
 
-UITableViewCell Usage
----------------------
+UITableViewCell Provider
+-----------------------
 
 Making jagged cells in a UITableView is simple using the included VENSeparatorTableViewCellProvider
 
