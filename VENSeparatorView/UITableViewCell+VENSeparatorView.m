@@ -4,7 +4,8 @@
 
 - (VENSeparatorView *)addTopLineSeparatorType:(VENSeparatorType)topLineSeparatorType
                       bottomLineSeparatorType:(VENSeparatorType)bottomLineSeparatorType
-                                   cellHeight:(CGFloat)height {
+                                   cellHeight:(CGFloat)height
+{
     return [self addTopLineSeparatorType:topLineSeparatorType
                  bottomLineSeparatorType:bottomLineSeparatorType
                               cellHeight:height

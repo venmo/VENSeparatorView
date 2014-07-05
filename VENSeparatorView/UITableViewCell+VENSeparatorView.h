@@ -15,6 +15,7 @@
                       bottomLineSeparatorType:(VENSeparatorType)bottomLineSeparatorType
                                    cellHeight:(CGFloat)height;
 
+
 /**
  *Adds separators to a table view cell with a given height.
 

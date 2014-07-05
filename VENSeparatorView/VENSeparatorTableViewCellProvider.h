@@ -37,12 +37,12 @@
  @param indexPath The indexPath of the specified cell.
  @param tableview The table view that contains the specified cell.
  @param height The expected height of the specified cell. If set to 0, the height of the separator view will be the default height of the cell.
- 
+
  @return The separator view applied to the specified cell
  */
 - (VENSeparatorView *)applySeparatorsToCell:(UITableViewCell *)cell
                                 atIndexPath:(NSIndexPath *)indexPath
                                 inTableView:(UITableView *)tableView
-                                     cellHeight:(CGFloat)height;
+                                 cellHeight:(CGFloat)height;
 
 @end

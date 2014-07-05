@@ -26,7 +26,7 @@
 - (VENSeparatorView *)applySeparatorsToCell:(UITableViewCell *)cell
                                 atIndexPath:(NSIndexPath *)indexPath
                                 inTableView:(UITableView *)tableView
-                                     cellHeight:(CGFloat)height
+                                 cellHeight:(CGFloat)height
 {
     BOOL topIsJagged = NO;
     BOOL bottomIsJagged = NO;
