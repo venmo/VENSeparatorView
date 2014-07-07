@@ -49,5 +49,4 @@ typedef NS_ENUM(NSUInteger, VENSeparatorPosition) {
 - (void)setTopLineSeparatorType:(VENSeparatorType)topLineSeparatorType
         bottomLineSeparatorType:(VENSeparatorType)bottomLineSeparatorType;
 
-
 @end
