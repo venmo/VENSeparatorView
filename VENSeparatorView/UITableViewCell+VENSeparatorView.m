@@ -48,7 +48,9 @@
     return separatorView;
 }
 
-- (CGRect)adjustedFrameForTopSeparatorType:(VENSeparatorType)topLineSeparatorType bottomSeparatorType:(VENSeparatorType)bottomLineSeparatorType cellHeight:(CGFloat)height
+- (CGRect)adjustedFrameForTopSeparatorType:(VENSeparatorType)topLineSeparatorType
+                       bottomSeparatorType:(VENSeparatorType)bottomLineSeparatorType
+                                cellHeight:(CGFloat)height
 {
     CGFloat y = 0;
     CGFloat adjustedHeight = height;
