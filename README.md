@@ -38,7 +38,8 @@ Making jagged cells in a UITableView is simple using the included VENSeparatorTa
 Import ```#import "VENSeparatorTableViewCellProvider.h"``` in your UITableViewDataSource and conform this class to the ```VENSeparatorTableViewCellProviderDelegate``` protocol ```isCellJaggedAtIndexPath:``` method. 
 
 Example:
-```
+
+```obj-c
 // Specifies that all cells with odd row index are jagged.
 - (BOOL)isCellJaggedAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -49,11 +50,14 @@ Example:
 Set your UITableView's ```separatorStyle``` property to ```UITableViewCellSeparatorStyleNone```
 
 Create a VENSeparatorTableViewCellProvider property:
-```
+
+```obj-c
 @property (nonatomic, strong) VENSeparatorTableViewCellProvider *separatorProvider;
 ```
+
 In this class's ```init``` method, or in the ```viewDidLoad``` method if this class is a UIViewController subclass, instantiate the VENSeparatorTableViewCellProvider property using its ```initWithStrokeColor:fillColor:delegate:``` method.
-```
+
+```obj-c
 self.separatorProvider = [[VENSeparatorTableViewCellProvider alloc] initWithStrokeColor:[UIColor grayColor]
                                                                               fillColor:[UIColor lightGrayColor]
                                                                                delegate:self];
@@ -61,11 +65,11 @@ self.separatorProvider = [[VENSeparatorTableViewCellProvider alloc] initWithStro
 
 At the end of your data source's ```tableView:cellForRowAtIndexPath:``` method apply separators to the UITableViewCell with the VENSeparatorTableViewCellProvider's ```applySeparatorsToCell:atIndexPath:inTableView:cellHeight:``` 
 
-```
+```obj-c
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	UITableViewCell *cell;
-	// ...
+    UITableViewCell *cell;
+    // ...
 
     [self.separatorProvider applySeparatorsToCell:cell atIndexPath:indexPath inTableView:tableView cellHeight:0];
     return cell;
