@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3A64BB111967BBD4001D1D35"
+               BlueprintIdentifier = "3A480EDA196A69B1000E9DF2"
                BuildableName = "libVENSeparatorView.a"
                BlueprintName = "VENSeparatorView"
                ReferencedContainer = "container:VENSeparatorView.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3A64BB211967BBD4001D1D35"
+               BlueprintIdentifier = "3A480EEA196A69B1000E9DF2"
                BuildableName = "VENSeparatorViewTests.xctest"
                BlueprintName = "VENSeparatorViewTests"
                ReferencedContainer = "container:VENSeparatorView.xcodeproj">
