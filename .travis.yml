@@ -5,6 +5,5 @@ before_install:
 xcode_workspace: VENSeparatorView.xcworkspace
 xcode_scheme: VENSeparatorView
 xcode_sdk:
-  - iphonesimulator6.1
   - iphonesimulator7.0
   - iphonesimulator7.1
