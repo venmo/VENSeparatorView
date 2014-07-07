@@ -1,9 +1,9 @@
 language: objective-c
 before_install:
+- gem update cocoapods -v
 - brew uninstall xctool; brew install xctool --HEAD;
 xcode_workspace: VENSeparatorView.xcworkspace
 xcode_scheme: VENSeparatorView
-xcode_sdk: iphonesimulator
-  - iphonesimulator6.1
+xcode_sdk:
   - iphonesimulator7.0
   - iphonesimulator7.1

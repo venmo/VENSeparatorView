@@ -10,6 +10,6 @@ Pod::Spec.new do |s|
   s.author       = { 'Venmo' => 'ios@venmo.com'}
   s.source       = { :git => 'https://github.com/venmo/VENSeparatorView.git', :tag => "v#{s.version}"}
   s.source_files = 'VENSeparatorView/*.{h,m}'
-  s.platform     = :ios, '6.0'
+  s.platform     = :ios, '7.0'
   s.requires_arc = true
 end
