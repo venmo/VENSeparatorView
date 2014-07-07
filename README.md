@@ -21,7 +21,7 @@ General Usage
 
 Import ```VENSeparatorView.h```
 
-Create an instance of UISeparatorView or a UISeparatorView subclass using its ```initWithFrame:topLineSeparatorType:bottomLineSeparatorType``` instantitator and add it as a subview.
+Create an instance of UISeparatorView or a UISeparatorView subclass using its ```initWithFrame:topLineSeparatorType:bottomLineSeparatorType``` initializer and add it as a subview.
 
 VENSeparatorType options are:
 ```
