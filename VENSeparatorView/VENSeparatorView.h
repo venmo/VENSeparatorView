@@ -16,8 +16,8 @@ typedef NS_ENUM(NSUInteger, VENSeparatorPosition) {
 @property (nonatomic, assign) VENSeparatorType topSeparatorType;
 @property (nonatomic, assign) VENSeparatorType bottomSeparatorType;
 
-@property (nonatomic, assign) NSUInteger jaggedEdgeVerticalVertexDistance;
 @property (nonatomic, assign) NSUInteger jaggedEdgeHorizontalVertexDistance;
+@property (nonatomic, assign) NSUInteger jaggedEdgeVerticalVertexDistance;
 
 @property (nonatomic, assign) CGFloat topBorderWidth;
 @property (nonatomic, assign) CGFloat bottomBorderWidth;
