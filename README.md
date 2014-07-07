@@ -83,4 +83,4 @@ Check out the [sample project](https://github.com/venmo/VENSeparatorView/tree/ma
 Contributing
 ------------
 
-We'd love to see your ideas for improving this library! The best way to contribute is by submitting a pull request. We'll do our best to respond to your patch as soon as possible. You can also submit a [new Github issue](https://github.com/venmo/VENSeparatorView/issues/new) if you find bugs or have questions.
+We'd love to see your ideas for improving this library! The best way to contribute is by submitting a pull request. We'll do our best to respond to your patch as soon as possible. You can also submit a [new Github issue](https://github.com/venmo/VENSeparatorView/issues/new) if you find bugs or have questions. :octocat:
