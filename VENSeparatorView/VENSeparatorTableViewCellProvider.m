@@ -28,55 +28,55 @@
                                 inTableView:(UITableView *)tableView
                                  cellHeight:(CGFloat)height
 {
-    VENSeparatorType topSeperatorType;
-    VENSeparatorType bottomSeperatorType;
+    VENSeparatorType topSeparatorType;
+    VENSeparatorType bottomSeparatorType;
     
-    BOOL topHasSeperatorType = NO;
-    BOOL bottomHasSeperatorType = NO;
+    BOOL topHasSeparatorType = NO;
+    BOOL bottomHasSeparatorType = NO;
     
     NSUInteger row = indexPath.row;
     NSUInteger section = indexPath.section;
     
     if (row != 0) {
-        topSeperatorType = [self.delegate seperatorTypeAtIndexPath:[NSIndexPath indexPathForRow:row-1 inSection:section]];
+        topSeparatorType = [self.delegate separatorTypeAtIndexPath:[NSIndexPath indexPathForRow:row-1 inSection:section]];
     }
     if (row < [self.delegate tableView:tableView numberOfRowsInSection:indexPath.section] - 1) {
-        bottomSeperatorType = [self.delegate seperatorTypeAtIndexPath:[NSIndexPath indexPathForRow:row+1 inSection:section]];
+        bottomSeparatorType = [self.delegate separatorTypeAtIndexPath:[NSIndexPath indexPathForRow:row+1 inSection:section]];
     }
-    BOOL selfHasStyle = ([self.delegate seperatorTypeAtIndexPath:indexPath] != VENSeparatorTypeNone);
+    BOOL selfHasStyle = ([self.delegate separatorTypeAtIndexPath:indexPath] != VENSeparatorTypeNone);
 
-    topHasSeperatorType = topSeperatorType != VENSeparatorTypeNone;
-    bottomHasSeperatorType = bottomSeperatorType != VENSeparatorTypeNone;
+    topHasSeparatorType = topSeparatorType != VENSeparatorTypeNone;
+    bottomHasSeparatorType = bottomSeparatorType != VENSeparatorTypeNone;
 
     if (selfHasStyle) {
-        if (topHasSeperatorType) {
-            topSeperatorType = VENSeparatorTypeStraight;
+        if (topHasSeparatorType) {
+            topSeparatorType = VENSeparatorTypeStraight;
         }
         else {
-            topSeperatorType = VENSeparatorTypeNone;
+            topSeparatorType = VENSeparatorTypeNone;
         }
-        bottomSeperatorType = VENSeparatorTypeNone;
+        bottomSeparatorType = VENSeparatorTypeNone;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     else {
-        if (topHasSeperatorType) {
-            topSeperatorType = topSeperatorType;
+        if (topHasSeparatorType) {
+            topSeparatorType = topSeparatorType;
         }
         else {
-            topSeperatorType = VENSeparatorTypeStraight;
+            topSeparatorType = VENSeparatorTypeStraight;
         }
-        if (bottomHasSeperatorType) {
-            bottomSeperatorType = bottomSeperatorType;
+        if (bottomHasSeparatorType) {
+            bottomSeparatorType = bottomSeparatorType;
         }
         else {
-            bottomSeperatorType = VENSeparatorTypeNone;
+            bottomSeparatorType = VENSeparatorTypeNone;
         }
         cell.selectionStyle = UITableViewCellSelectionStyleDefault;
     }
 
     CGFloat estimatedHeight = height ?: CGRectGetHeight(cell.frame);
 
-    VENSeparatorView *separatorView = [cell addTopLineSeparatorType:topSeperatorType bottomLineSeparatorType:bottomSeperatorType
+    VENSeparatorView *separatorView = [cell addTopLineSeparatorType:topSeparatorType bottomLineSeparatorType:bottomSeparatorType
                                                          cellHeight:estimatedHeight];
     separatorView.topStrokeColor = (separatorView.topSeparatorType == VENSeparatorTypeJagged) ? self.fillColor : self.strokeColor;
     separatorView.bottomStrokeColor = (separatorView.bottomSeparatorType == VENSeparatorTypeJagged) ? self.fillColor : self.strokeColor;

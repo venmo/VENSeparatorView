@@ -16,7 +16,7 @@ typedef NS_ENUM(NSUInteger, VENSeparatorPosition) {
 typedef NS_ENUM(NSInteger, VENSeparatorType) {
     VENSeparatorTypeStraight,
     VENSeparatorTypeJagged,
-    VENSeperatorTypeInset,
+    VENSeparatorTypeInset,
     VENSeparatorTypeNone
 };
 

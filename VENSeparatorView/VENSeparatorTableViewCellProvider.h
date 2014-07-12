@@ -11,7 +11,7 @@
  YES if the cell at the given indexPath is a jagged cell. NO otherwise.
  */
 
-- (VENSeparatorType)seperatorTypeAtIndexPath:(NSIndexPath *)indexPath;
+- (VENSeparatorType)separatorTypeAtIndexPath:(NSIndexPath *)indexPath;
 
 @end
 
@@ -20,13 +20,13 @@
 @property (nonatomic, weak) id<VENSeparatorTableViewCellProviderDelegate, UITableViewDataSource> delegate;
 
 /**
- Creates a separator provider that can apply seperators with the given stroke color, fill color, border width and delegate.
+ Creates a separator provider that can apply separators with the given stroke color, fill color, border width and delegate.
 
  @param strokeColor The color of the separator lines.
  @param fillColor The color of the jagged cells.
  @param delegate The provider's delegate that conforms to the VENTableViewSeparatorProviderDelegate and UITableViewDataSource protocols.
 
- @return An initialized seperator provider.
+ @return An initialized separator provider.
  */
 - (instancetype)initWithStrokeColor:(UIColor *)strokeColor
                           fillColor:(UIColor *)fillColor

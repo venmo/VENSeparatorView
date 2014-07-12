@@ -58,7 +58,7 @@
 //    }
 //}
 
-- (VENSeparatorType)seperatorTypeAtIndexPath:(NSIndexPath *)indexPath
+- (VENSeparatorType)separatorTypeAtIndexPath:(NSIndexPath *)indexPath
 {
         if (indexPath.row % 7 == 4 ||indexPath.row % 5 == 2) {
             return VENSeparatorTypeJagged;

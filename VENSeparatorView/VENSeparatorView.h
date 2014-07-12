@@ -23,7 +23,7 @@
  @param frame The frame of the separator view. This should usually just be set to the frame of its superview.
  @param topLineSeparatorType The type of separator at the top of the separator view.
  @param bottomLineSeparatorType The type of separator at the bottom of the separator view.
- @return A seperator view with the specified frame and top and bottom separators.
+ @return A separator view with the specified frame and top and bottom separators.
  */
 - (instancetype)initWithFrame:(CGRect)frame
          topLineSeparatorType:(VENSeparatorType)topLineSeparatorType
