@@ -13,6 +13,10 @@
 
 - (VENSeparatorType)separatorTypeAtIndexPath:(NSIndexPath *)indexPath;
 
+@optional
+//This method is deprecated use seperatorTypeAtIndexPath instead 
+- (BOOL)isCellJaggedAtIndexPath:(NSIndexPath *)indexPath __deprecated_msg("Use seperatorTypeAtIndexPath: instead");
+
 @end
 
 @interface VENSeparatorTableViewCellProvider : NSObject
