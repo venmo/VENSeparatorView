@@ -37,13 +37,7 @@
     NSUInteger row = indexPath.row;
     NSUInteger section = indexPath.section;
     
-    if ([self.delegate respondsToSelector:@selector(isCellJaggedAtIndexPath:)]) {
-        NSLog(@"isCellJaggedAtIndexPath: has been replaced by separatorTypeAtIndexPath:");
-        
-        return [self applyJaggedSeparatorsToCell:cell atIndexPath:indexPath inTableView:tableView cellHeight:height];
-    }
-    
-    else {
+    if ([self.delegate respondsToSelector:@selector(separatorTypeAtIndexPath:)]) {
         
         if (row != 0) {
             topSeparatorType = [self.delegate separatorTypeAtIndexPath:[NSIndexPath indexPathForRow:row-1 inSection:section]];
@@ -94,6 +88,11 @@
         return separatorView;
     }
     
+    else if ([self.delegate respondsToSelector:@selector(isCellJaggedAtIndexPath:)]) {
+        NSLog(@"isCellJaggedAtIndexPath: has been replaced by separatorTypeAtIndexPath:");
+        
+        return [self applyJaggedSeparatorsToCell:cell atIndexPath:indexPath inTableView:tableView cellHeight:height];
+    }
     return nil;
 }
 
