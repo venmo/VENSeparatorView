@@ -31,13 +31,13 @@ static NSInteger DefaultJaggedEdgeVerticalVertexDistance = 5;
 
 - (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
-
+    
     UIColor *topStrokeColor  = self.topStrokeColor ?: DefaultStrokeColor;
     UIColor *bottomStrokeColor  = self.bottomStrokeColor ?: DefaultStrokeColor;
-
+    
     CGFloat topBorderWidth = self.topBorderWidth ?: DefaultBorderWidth;
     CGFloat bottomBorderWidth = self.bottomBorderWidth ?: DefaultBorderWidth;
-
+    
     switch (self.topSeparatorType) {
         case VENSeparatorTypeStraight:
             [self drawSeparatorAtPosition:VENSeparatorPositionTop
@@ -51,6 +51,11 @@ static NSInteger DefaultJaggedEdgeVerticalVertexDistance = 5;
                               strokeColor:topStrokeColor
                               borderWidth:topBorderWidth];
             break;
+        case VENSeperatorTypeInset:
+            [self drawSeparatorAtPosition:VENSeparatorPositionTop
+                                     type:VENSeperatorTypeInset
+                              strokeColor:topStrokeColor
+                              borderWidth:topBorderWidth];
         default:
             break;
     }
@@ -67,6 +72,10 @@ static NSInteger DefaultJaggedEdgeVerticalVertexDistance = 5;
                               strokeColor:bottomStrokeColor
                               borderWidth:bottomBorderWidth];
             break;
+            [self drawSeparatorAtPosition:VENSeparatorPositionTop
+                                     type:VENSeperatorTypeInset
+                              strokeColor:topStrokeColor
+                              borderWidth:topBorderWidth];
         default:
             break;
     }
@@ -82,7 +91,7 @@ static NSInteger DefaultJaggedEdgeVerticalVertexDistance = 5;
     NSInteger x = 0;
     NSInteger y = (position == VENSeparatorPositionTop) ? borderWidth : CGRectGetHeight(self.frame) - borderWidth;
     [path moveToPoint:CGPointMake(x, y)];
-
+    
     if (type == VENSeparatorTypeJagged) {
         NSUInteger verticalDisplacement = self.jaggedEdgeVerticalVertexDistance ?: DefaultJaggedEdgeVerticalVertexDistance;
         NSUInteger horizontalDisplacement = self.jaggedEdgeHorizontalVertexDistance ?: DefaultJaggedEdgeHorizontalVertexDistance;
@@ -103,16 +112,16 @@ static NSInteger DefaultJaggedEdgeVerticalVertexDistance = 5;
     else if (type == VENSeparatorTypeStraight) {
         [path addLineToPoint:CGPointMake(CGRectGetWidth(self.frame), y)];
     }
-
+    
     CGFloat offSet = 2 * borderWidth;
-
+    
     x = CGRectGetWidth(self.frame) + offSet;
     y = (position == VENSeparatorPositionTop) ? -offSet : CGRectGetHeight(self.frame) + offSet;
     [path addLineToPoint:CGPointMake(x,y)];
-
+    
     x = -offSet;
     [path addLineToPoint:CGPointMake(x, y)];
-
+    
     [strokeColor setStroke];
     [self drawBezierPath:path];
 }

@@ -1,5 +1,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "NSObject+EnumDefinitions.h"
+
 @class VENSeparatorView;
 
 @protocol VENSeparatorTableViewCellProviderDelegate <NSObject>
@@ -8,7 +10,9 @@
 /**
  YES if the cell at the given indexPath is a jagged cell. NO otherwise.
  */
-- (BOOL)isCellJaggedAtIndexPath:(NSIndexPath *)indexPath;
+//- (BOOL)isCellJaggedAtIndexPath:(NSIndexPath *)indexPath;
+
+- (VENSeparatorType)seperatorTypeAtIndexPath:(NSIndexPath *)indexPath;
 
 @end
 

@@ -1,15 +1,5 @@
 #import <UIKit/UIKit.h>
-
-typedef NS_ENUM(NSInteger, VENSeparatorType) {
-    VENSeparatorTypeStraight,
-    VENSeparatorTypeJagged,
-    VENSeparatorTypeNone
-};
-
-typedef NS_ENUM(NSUInteger, VENSeparatorPosition) {
-    VENSeparatorPositionTop,
-    VENSeparatorPositionBottom
-};
+#import "NSObject+EnumDefinitions.h"
 
 @interface VENSeparatorView : UIView
 

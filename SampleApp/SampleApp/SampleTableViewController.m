@@ -48,14 +48,24 @@
 
 #pragma mark - VENTableViewSeparatorProviderDelegate methods
 
-- (BOOL)isCellJaggedAtIndexPath:(NSIndexPath *)indexPath
+//- (BOOL)isCellJaggedAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    if (indexPath.row % 7 == 4 ||indexPath.row % 5 == 2) {
+//        return YES;
+//    }
+//    else {
+//        return NO;
+//    }
+//}
+
+- (VENSeparatorType)seperatorTypeAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row % 7 == 4 ||indexPath.row % 5 == 2) {
-        return YES;
-    }
-    else {
-        return NO;
-    }
+        if (indexPath.row % 7 == 4 ||indexPath.row % 5 == 2) {
+            return VENSeparatorTypeJagged;
+        }
+        else {
+            return VENSeparatorTypeNone;
+        }
 }
 
 @end
