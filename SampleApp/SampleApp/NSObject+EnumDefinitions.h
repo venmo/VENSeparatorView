@@ -20,6 +20,4 @@ typedef NS_ENUM(NSInteger, VENSeparatorType) {
     VENSeparatorTypeNone
 };
 
-@interface NSObject (EnumDefinitions)
 
-@end

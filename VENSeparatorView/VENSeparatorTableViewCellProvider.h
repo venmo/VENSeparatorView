@@ -10,7 +10,6 @@
 /**
  YES if the cell at the given indexPath is a jagged cell. NO otherwise.
  */
-//- (BOOL)isCellJaggedAtIndexPath:(NSIndexPath *)indexPath;
 
 - (VENSeparatorType)seperatorTypeAtIndexPath:(NSIndexPath *)indexPath;
 
