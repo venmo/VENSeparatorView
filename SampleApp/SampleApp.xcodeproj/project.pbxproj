@@ -23,7 +23,6 @@
 		3A2F2583195D20DD00226DFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2F2562195D20DD00226DFF /* Foundation.framework */; };
 		3A2F2584195D20DD00226DFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2F2566195D20DD00226DFF /* UIKit.framework */; };
 		3A54D352195F8C3400A5FE74 /* SampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A54D351195F8C3400A5FE74 /* SampleTableViewController.m */; };
-		44A7850D1970E9F000C0743E /* NSObject+EnumDefinitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A7850C1970E9F000C0743E /* NSObject+EnumDefinitions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +61,6 @@
 		3A54D350195F8C3400A5FE74 /* SampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleTableViewController.h; sourceTree = "<group>"; };
 		3A54D351195F8C3400A5FE74 /* SampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTableViewController.m; sourceTree = "<group>"; };
 		44A7850B1970E9F000C0743E /* NSObject+EnumDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+EnumDefinitions.h"; sourceTree = "<group>"; };
-		44A7850C1970E9F000C0743E /* NSObject+EnumDefinitions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+EnumDefinitions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +97,6 @@
 				3A1893A41961C654000397B6 /* VENSeparatorTableViewCellProvider.h */,
 				3A1893A51961C654000397B6 /* VENSeparatorTableViewCellProvider.m */,
 				44A7850B1970E9F000C0743E /* NSObject+EnumDefinitions.h */,
-				44A7850C1970E9F000C0743E /* NSObject+EnumDefinitions.m */,
 			);
 			name = VENSeparatorView;
 			sourceTree = "<group>";
@@ -294,7 +291,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A1893A81961C654000397B6 /* VENSeparatorTableViewCellProvider.m in Sources */,
-				44A7850D1970E9F000C0743E /* NSObject+EnumDefinitions.m in Sources */,
 				3A2F2579195D20DD00226DFF /* SampleViewController.m in Sources */,
 				3A54D352195F8C3400A5FE74 /* SampleTableViewController.m in Sources */,
 				3A1893A71961C654000397B6 /* VENSeparatorView.m in Sources */,
