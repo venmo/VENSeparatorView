@@ -28,6 +28,22 @@
                                 inTableView:(UITableView *)tableView
                                  cellHeight:(CGFloat)height
 {
+    if ([self.delegate respondsToSelector:@selector(separatorTypeAtIndexPath:)]) {
+        return [self applySeparatorWithSeparatorStyleToCell:cell atIndexPath:indexPath inTableView:tableView cellHeight:height];
+    }
+    
+    else if ([self.delegate respondsToSelector:@selector(isCellJaggedAtIndexPath:)]) {
+        NSLog(@"isCellJaggedAtIndexPath: has been replaced by separatorTypeAtIndexPath:");
+        return [self applyJaggedSeparatorsToCell:cell atIndexPath:indexPath inTableView:tableView cellHeight:height];
+    }
+    return nil;
+}
+
+- (VENSeparatorView *)applySeparatorWithSeparatorStyleToCell:(UITableViewCell *)cell
+                             atIndexPath:(NSIndexPath *)indexPath
+                             inTableView:(UITableView *)tableView
+                              cellHeight:(CGFloat)height
+{
     VENSeparatorType topSeparatorType;
     VENSeparatorType bottomSeparatorType;
     
@@ -37,63 +53,53 @@
     NSUInteger row = indexPath.row;
     NSUInteger section = indexPath.section;
     
-    if ([self.delegate respondsToSelector:@selector(separatorTypeAtIndexPath:)]) {
-        
-        if (row != 0) {
-            topSeparatorType = [self.delegate separatorTypeAtIndexPath:[NSIndexPath indexPathForRow:row-1 inSection:section]];
-        }
-        if (row < [self.delegate tableView:tableView numberOfRowsInSection:indexPath.section] - 1) {
-            bottomSeparatorType = [self.delegate separatorTypeAtIndexPath:[NSIndexPath indexPathForRow:row+1 inSection:section]];
-        }
-        BOOL selfHasStyle = ([self.delegate separatorTypeAtIndexPath:indexPath] != VENSeparatorTypeNone);
-        
-        topHasSeparatorType = topSeparatorType != VENSeparatorTypeNone;
-        bottomHasSeparatorType = bottomSeparatorType != VENSeparatorTypeNone;
-        
-        if (selfHasStyle) {
-            if (topHasSeparatorType) {
-                topSeparatorType = VENSeparatorTypeStraight;
-            }
-            else {
-                topSeparatorType = VENSeparatorTypeNone;
-            }
-            bottomSeparatorType = VENSeparatorTypeNone;
-            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    if (row != 0) {
+        topSeparatorType = [self.delegate separatorTypeAtIndexPath:[NSIndexPath indexPathForRow:row-1 inSection:section]];
+    }
+    if (row < [self.delegate tableView:tableView numberOfRowsInSection:indexPath.section] - 1) {
+        bottomSeparatorType = [self.delegate separatorTypeAtIndexPath:[NSIndexPath indexPathForRow:row+1 inSection:section]];
+    }
+    BOOL selfHasStyle = ([self.delegate separatorTypeAtIndexPath:indexPath] != VENSeparatorTypeNone);
+    
+    topHasSeparatorType = topSeparatorType != VENSeparatorTypeNone;
+    bottomHasSeparatorType = bottomSeparatorType != VENSeparatorTypeNone;
+    
+    if (selfHasStyle) {
+        if (topHasSeparatorType) {
+            topSeparatorType = VENSeparatorTypeStraight;
         }
         else {
-            if (topHasSeparatorType) {
-                topSeparatorType = topSeparatorType;
-            }
-            else {
-                topSeparatorType = VENSeparatorTypeStraight;
-            }
-            if (bottomHasSeparatorType) {
-                bottomSeparatorType = bottomSeparatorType;
-            }
-            else {
-                bottomSeparatorType = VENSeparatorTypeNone;
-            }
-            cell.selectionStyle = UITableViewCellSelectionStyleDefault;
+            topSeparatorType = VENSeparatorTypeNone;
         }
-        
-        CGFloat estimatedHeight = height ?: CGRectGetHeight(cell.frame);
-        
-        VENSeparatorView *separatorView = [cell addTopLineSeparatorType:topSeparatorType bottomLineSeparatorType:bottomSeparatorType
-                                                             cellHeight:estimatedHeight];
-        separatorView.topStrokeColor = (separatorView.topSeparatorType == VENSeparatorTypeJagged) ? self.fillColor : self.strokeColor;
-        separatorView.bottomStrokeColor = (separatorView.bottomSeparatorType == VENSeparatorTypeJagged) ? self.fillColor : self.strokeColor;
-        separatorView.fillColor = self.fillColor;
-        separatorView.backgroundColor = selfHasStyle ? self.fillColor : [UIColor clearColor];
-       
-        return separatorView;
+        bottomSeparatorType = VENSeparatorTypeNone;
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    }
+    else {
+        if (topHasSeparatorType) {
+            topSeparatorType = topSeparatorType;
+        }
+        else {
+            topSeparatorType = VENSeparatorTypeStraight;
+        }
+        if (bottomHasSeparatorType) {
+            bottomSeparatorType = bottomSeparatorType;
+        }
+        else {
+            bottomSeparatorType = VENSeparatorTypeNone;
+        }
+        cell.selectionStyle = UITableViewCellSelectionStyleDefault;
     }
     
-    else if ([self.delegate respondsToSelector:@selector(isCellJaggedAtIndexPath:)]) {
-        NSLog(@"isCellJaggedAtIndexPath: has been replaced by separatorTypeAtIndexPath:");
-        
-        return [self applyJaggedSeparatorsToCell:cell atIndexPath:indexPath inTableView:tableView cellHeight:height];
-    }
-    return nil;
+    CGFloat estimatedHeight = height ?: CGRectGetHeight(cell.frame);
+    
+    VENSeparatorView *separatorView = [cell addTopLineSeparatorType:topSeparatorType bottomLineSeparatorType:bottomSeparatorType
+                                                         cellHeight:estimatedHeight];
+    separatorView.topStrokeColor = (separatorView.topSeparatorType == VENSeparatorTypeJagged) ? self.fillColor : self.strokeColor;
+    separatorView.bottomStrokeColor = (separatorView.bottomSeparatorType == VENSeparatorTypeJagged) ? self.fillColor : self.strokeColor;
+    separatorView.fillColor = self.fillColor;
+    separatorView.backgroundColor = selfHasStyle ? self.fillColor : [UIColor clearColor];
+    
+    return separatorView;
 }
 
 #pragma clang diagnostic push

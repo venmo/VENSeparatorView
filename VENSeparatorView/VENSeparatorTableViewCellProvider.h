@@ -8,13 +8,15 @@
 
 @required
 /**
- YES if the cell at the given indexPath is a jagged cell. NO otherwise.
+ Returns the VENSeparatorType at a given index path.  
  */
-
 - (VENSeparatorType)separatorTypeAtIndexPath:(NSIndexPath *)indexPath;
 
 @optional
-//This method is deprecated use seperatorTypeAtIndexPath instead 
+//This method is deprecated use seperatorTypeAtIndexPath instead
+/**
+ YES if the cell at the given indexPath is a jagged cell. NO otherwise.
+ */
 - (BOOL)isCellJaggedAtIndexPath:(NSIndexPath *)indexPath __deprecated_msg("Use seperatorTypeAtIndexPath: instead");
 
 @end
