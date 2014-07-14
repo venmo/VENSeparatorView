@@ -33,9 +33,9 @@ VENSeparatorTypeNone
 UITableViewCell Provider
 -----------------------
 
-Making jagged cells in a UITableView is simple using the included VENSeparatorTableViewCellProvider
+Making styled cells in a UITableView is simple using the included VENSeparatorTableViewCellProvider
 
-Import ```#import "VENSeparatorTableViewCellProvider.h"``` in your UITableViewDataSource and conform this class to the ```VENSeparatorTableViewCellProviderDelegate``` protocol ```isCellJaggedAtIndexPath:``` method. 
+Import ```#import "VENSeparatorTableViewCellProvider.h"``` in your UITableViewDataSource and conform this class to the ```VENSeparatorTableViewCellProviderDelegate``` protocol ```separatorTypeAtIndexPath:``` method. 
 
 Example:
 
