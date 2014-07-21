@@ -41,9 +41,14 @@ Example:
 
 ```obj-c
 // Specifies that all cells with odd row index are jagged.
-- (BOOL)isCellJaggedAtIndexPath:(NSIndexPath *)indexPath
+- (VENSeparatorType)separatorTypeAtIndexPath:(NSIndexPath *)indexPath
 {
-	return (indexPath.row % 2);
+        if (indexPath.row % 7 == 4 ||indexPath.row % 5 == 2) {
+            return VENSeparatorTypeJagged;
+        }
+        else {
+            return VENSeparatorTypeNone;
+        }
 }
 ```
 
