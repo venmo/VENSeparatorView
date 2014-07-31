@@ -35,19 +35,19 @@ UITableViewCell Provider
 
 Making styled cells in a UITableView is simple using the included VENSeparatorTableViewCellProvider
 
-Import ```#import "VENSeparatorTableViewCellProvider.h"``` in your UITableViewDataSource and conform this class to the ```VENSeparatorTableViewCellProviderDelegate``` protocol ```separatorTypeAtIndexPath:``` method. 
+Import ```#import "VENSeparatorTableViewCellProvider.h"``` in your UITableViewDataSource and conform this class to the ```VENSeparatorTableViewCellProviderDelegate``` protocol ```cellShouldApplySeparatorStyleAtIndexPath:``` method. 
 
 Example:
 
 ```obj-c
-// Specifies that all cells with odd row index are jagged.
-- (VENSeparatorType)separatorTypeAtIndexPath:(NSIndexPath *)indexPath
+// Specifies that cells at indexPath should apply separator style set in initializer. 
+- (BOOL) cellShouldApplySeparatorStyleAtIndexPath:(NSIndexPath)indexPath
 {
         if (indexPath.row % 7 == 4 ||indexPath.row % 5 == 2) {
-            return VENSeparatorTypeJagged;
+            return YES;
         }
         else {
-            return VENSeparatorTypeNone;
+            return NO;
         }
 }
 ```
@@ -60,10 +60,10 @@ Create a VENSeparatorTableViewCellProvider property:
 @property (nonatomic, strong) VENSeparatorTableViewCellProvider *separatorProvider;
 ```
 
-In this class's ```init``` method, or in the ```viewDidLoad``` method if this class is a UIViewController subclass, instantiate the VENSeparatorTableViewCellProvider property using its ```initWithStrokeColor:fillColor:delegate:``` method.
+In this class's ```init``` method, or in the ```viewDidLoad``` method, if this class is a UIViewController subclass, instantiate the VENSeparatorTableViewCellProvider property using its ```initWithSeparatorType:StrokeColor:fillColor:delegate:``` method.
 
 ```obj-c
-self.separatorProvider = [[VENSeparatorTableViewCellProvider alloc] initWithStrokeColor:[UIColor grayColor]
+self.separatorProvider = [[VENSeparatorTableViewCellProvider alloc] initWithSeparatorType:VENSeparatorTypeJagged StrokeColor:[UIColor grayColor]
                                                                               fillColor:[UIColor lightGrayColor]
                                                                                delegate:self];
 ```
