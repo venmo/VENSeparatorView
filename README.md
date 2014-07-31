@@ -63,9 +63,9 @@ Create a VENSeparatorTableViewCellProvider property:
 In this class's ```init``` method, or in the ```viewDidLoad``` method, if this class is a UIViewController subclass, instantiate the VENSeparatorTableViewCellProvider property using its ```initWithSeparatorType:StrokeColor:fillColor:delegate:``` method.
 
 ```obj-c
-self.separatorProvider = [[VENSeparatorTableViewCellProvider alloc] initWithSeparatorType:VENSeparatorTypeJagged StrokeColor:[UIColor grayColor]
-                                                                              fillColor:[UIColor lightGrayColor]
-                                                                               delegate:self];
+self.separatorProvider = [[VENSeparatorTableViewCellProvider alloc] initWithSeparatorType:VENSeparatorTypeJagged                                                                                          StrokeColor:[UIColor grayColor]
+                                                                                fillColor:[UIColor lightGrayColor]
+                                                                                 delegate:self];
 ```
 
 At the end of your data source's ```tableView:cellForRowAtIndexPath:``` method apply separators to the UITableViewCell with the VENSeparatorTableViewCellProvider's ```applySeparatorsToCell:atIndexPath:inTableView:cellHeight:``` 
