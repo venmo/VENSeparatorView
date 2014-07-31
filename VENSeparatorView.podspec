@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'VENSeparatorView'
-  s.version      = '1.0.0'
+  s.version      = '1.1.0'
   s.summary      = 'Separator view used in the Venmo app.'
   s.description   = <<-DESC
                    An easy to use separator view that is used in the Venmo app.
