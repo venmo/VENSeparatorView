@@ -13,11 +13,12 @@
 {
     [super viewDidLoad];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.separatorProvider = [[VENSeparatorTableViewCellProvider alloc] initWithStrokeColor:[UIColor grayColor]
-                                                                                  fillColor:[UIColor lightGrayColor]
-                                                                                   delegate:self];
+    
+    self.separatorProvider = [[VENSeparatorTableViewCellProvider alloc] initWithSeparatorType:VENSeparatorTypeJagged
+                                                                                  StrokeColor:[UIColor greenColor]
+                                                                                    fillColor:[UIColor purpleColor]
+                                                                                     delegate:self];
 }
-
 
 #pragma mark - Table view data source
 
@@ -48,7 +49,7 @@
 
 #pragma mark - VENTableViewSeparatorProviderDelegate methods
 
-// Note: This method has been deprecated and replaced by separaterTypeAtIndexPath: Backwards compatibility has been built in for the time being.
+// Note: This method has been deprecated and replaced by cellShouldApplySeperatorStyleAtIndexPath: Backwards compatibility has been built in for the time being.
 
 //- (BOOL)isCellJaggedAtIndexPath:(NSIndexPath *)indexPath
 //{
@@ -60,14 +61,15 @@
 //    }
 //}
 
-- (VENSeparatorType)separatorTypeAtIndexPath:(NSIndexPath *)indexPath
+- (BOOL)cellShouldApplySeparatorStyleAtIndexPath:(NSIndexPath *)indexPath
 {
-        if (indexPath.row % 7 == 4 ||indexPath.row % 5 == 2) {
-            return VENSeparatorTypeJagged;
-        }
-        else {
-            return VENSeparatorTypeNone;
-        }
+    if (indexPath.row % 7 == 4 ||indexPath.row % 5 == 2) {
+        return YES;
+    }
+    else {
+        return NO;
+    }
 }
+
 
 @end

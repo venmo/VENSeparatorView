@@ -12,19 +12,24 @@ SpecBegin(VENSeparatorTableViewCellProvider)
 __block id mockDelegate;
 __block VENSeparatorTableViewCellProvider *provider;
 
+
 beforeAll(^{
     mockDelegate = [OCMockObject mockForClass:[SampleTableViewCellProviderDelegate class]];
+    
     [[[mockDelegate stub] andReturnValue:@5] tableView:OCMOCK_ANY numberOfRowsInSection:0];
-    [[[mockDelegate stub] andReturnValue:@NO] isCellJaggedAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-    [[[mockDelegate stub] andReturnValue:@YES] isCellJaggedAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]];
-    [[[mockDelegate stub] andReturnValue:@YES] isCellJaggedAtIndexPath:[NSIndexPath indexPathForRow:2 inSection:0]];
-    [[[mockDelegate stub] andReturnValue:@NO] isCellJaggedAtIndexPath:[NSIndexPath indexPathForRow:3 inSection:0]];
-    [[[mockDelegate stub] andReturnValue:@YES] isCellJaggedAtIndexPath:[NSIndexPath indexPathForRow:4 inSection:0]];
-    provider = [[VENSeparatorTableViewCellProvider alloc]
-                initWithStrokeColor:[UIColor grayColor]
-                fillColor:[UIColor lightGrayColor]
-                delegate:mockDelegate];
+    [[[mockDelegate stub] andReturnValue:@NO] cellShouldApplySeparatorStyleAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    [[[mockDelegate stub] andReturnValue:@YES] cellShouldApplySeparatorStyleAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]];
+    [[[mockDelegate stub] andReturnValue:@YES] cellShouldApplySeparatorStyleAtIndexPath:[NSIndexPath indexPathForRow:2 inSection:0]];
+    [[[mockDelegate stub] andReturnValue:@NO] cellShouldApplySeparatorStyleAtIndexPath:[NSIndexPath indexPathForRow:3 inSection:0]];
+    [[[mockDelegate stub] andReturnValue:@YES] cellShouldApplySeparatorStyleAtIndexPath:[NSIndexPath indexPathForRow:4 inSection:0]];
+
+    provider = [[VENSeparatorTableViewCellProvider alloc] initWithSeparatorType:VENSeparatorTypeJagged
+                                                                    StrokeColor:[UIColor grayColor]
+                                                                      fillColor:[UIColor lightGrayColor]
+                                                                       delegate:mockDelegate];
 });
+
+
 
 describe(@"applySeparatorsToCell:atIndexPath:inTableView:cellHeight:", ^{
     __block UITableViewCell *cell;
