@@ -1,5 +1,5 @@
 #import "VENSeparatorTableViewCellProvider.h"
-#import "UITableViewCell+VENSeparatorView.h"
+
 
 @interface VENSeparatorTableViewCellProvider()
 

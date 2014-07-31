@@ -51,13 +51,7 @@ static NSInteger DefaultJaggedEdgeVerticalVertexDistance = 5;
                               strokeColor:topStrokeColor
                               borderWidth:topBorderWidth];
             break;
-        case VENSeparatorTypeInset:
-            [self drawSeparatorAtPosition:VENSeparatorPositionTop
-                                     type:VENSeparatorTypeInset
-                              strokeColor:topStrokeColor
-                              borderWidth:topBorderWidth];
-        default:
-            break;
+        
     }
     switch (self.bottomSeparatorType) {
         case VENSeparatorTypeStraight:
@@ -72,10 +66,7 @@ static NSInteger DefaultJaggedEdgeVerticalVertexDistance = 5;
                               strokeColor:bottomStrokeColor
                               borderWidth:bottomBorderWidth];
             break;
-            [self drawSeparatorAtPosition:VENSeparatorPositionTop
-                                     type:VENSeparatorTypeInset
-                              strokeColor:topStrokeColor
-                              borderWidth:topBorderWidth];
+         
         default:
             break;
     }

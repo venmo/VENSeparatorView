@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "NSObject+EnumDefinitions.h"
+#import "UITableViewCell+VENSeparatorView.h"
 
 @class VENSeparatorView;
 
