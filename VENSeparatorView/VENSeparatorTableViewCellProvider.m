@@ -1,5 +1,5 @@
 #import "VENSeparatorTableViewCellProvider.h"
-#import "UITableViewCell+VENSeparatorView.h"
+
 
 @interface VENSeparatorTableViewCellProvider()
 
@@ -14,8 +14,17 @@
                           fillColor:(UIColor *)fillColor
                            delegate:(id<VENSeparatorTableViewCellProviderDelegate, UITableViewDataSource>)delegate
 {
+    return [self initWithSeparatorType:VENSeparatorTypeJagged StrokeColor:strokeColor fillColor:fillColor delegate:delegate];
+}
+
+- (instancetype)initWithSeparatorType:(VENSeparatorType)separatorType
+                          StrokeColor:(UIColor *)strokeColor
+                            fillColor:(UIColor *)fillColor
+                             delegate:(id<VENSeparatorTableViewCellProviderDelegate, UITableViewDataSource>)delegate
+{
     self = [super init];
     if (self) {
+        _separatorType = separatorType;
         _strokeColor = strokeColor;
         _fillColor = fillColor;
         _delegate = delegate;
@@ -28,23 +37,46 @@
                                 inTableView:(UITableView *)tableView
                                  cellHeight:(CGFloat)height
 {
-    BOOL topIsJagged = NO;
-    BOOL bottomIsJagged = NO;
+    BOOL topAppliesStyle = NO;
+    BOOL bottomAppliesStyle = NO;
     NSUInteger row = indexPath.row;
     NSUInteger section = indexPath.section;
-    if (row != 0) {
-        topIsJagged = [self.delegate isCellJaggedAtIndexPath:[NSIndexPath indexPathForRow:row-1 inSection:section]];
+    
+    BOOL cellJaggedImplemented = [self.delegate respondsToSelector:@selector(isCellJaggedAtIndexPath:)];
+    BOOL shouldApplySeparatorImplemented = [self.delegate respondsToSelector:@selector(cellShouldApplySeparatorStyleAtIndexPath:)];
+   
+    BOOL selfAppliesStyle = NO;
+  
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+    
+    if (cellJaggedImplemented && !shouldApplySeparatorImplemented) {
+        if (row != 0) {
+            topAppliesStyle = [self.delegate isCellJaggedAtIndexPath:[NSIndexPath indexPathForRow:row-1 inSection:section]];
+        }
+        if (row < [self.delegate tableView:tableView numberOfRowsInSection:indexPath.section] - 1) {
+            bottomAppliesStyle = [self.delegate isCellJaggedAtIndexPath:[NSIndexPath indexPathForRow:row+1 inSection:section]];
+        }
+        selfAppliesStyle = [self.delegate isCellJaggedAtIndexPath:indexPath];
     }
-    if (row < [self.delegate tableView:tableView numberOfRowsInSection:indexPath.section] - 1) {
-        bottomIsJagged = [self.delegate isCellJaggedAtIndexPath:[NSIndexPath indexPathForRow:row+1 inSection:section]];
+    
+    else  {
+        if (row != 0) {
+            topAppliesStyle = [self.delegate cellShouldApplySeparatorStyleAtIndexPath:[NSIndexPath indexPathForRow:row-1 inSection:section]];
+        }
+        if (row < [self.delegate tableView:tableView numberOfRowsInSection:indexPath.section] - 1) {
+            bottomAppliesStyle = [self.delegate cellShouldApplySeparatorStyleAtIndexPath:[NSIndexPath indexPathForRow:row+1 inSection:section]];
+        }
+        selfAppliesStyle = [self.delegate cellShouldApplySeparatorStyleAtIndexPath:indexPath];
     }
-    BOOL selfIsJagged = [self.delegate isCellJaggedAtIndexPath:indexPath];
-
+    
+#pragma clang diagnostic pop 
+    
     VENSeparatorType topType;
     VENSeparatorType bottomType;
-
-    if (selfIsJagged) {
-        if (topIsJagged) {
+    
+    if (selfAppliesStyle) {
+        if (topAppliesStyle) {
             topType = VENSeparatorTypeStraight;
         }
         else {
@@ -54,14 +86,14 @@
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     else {
-        if (topIsJagged) {
-            topType = VENSeparatorTypeJagged;
+        if (topAppliesStyle) {
+            topType = self.separatorType;
         }
         else {
             topType = VENSeparatorTypeStraight;
         }
-        if (bottomIsJagged) {
-            bottomType = VENSeparatorTypeJagged;
+        if (bottomAppliesStyle) {
+            bottomType = self.separatorType;
         }
         else {
             bottomType = VENSeparatorTypeNone;
@@ -69,14 +101,17 @@
         cell.selectionStyle = UITableViewCellSelectionStyleDefault;
     }
     CGFloat estimatedHeight = height ?: CGRectGetHeight(cell.frame);
-
+    
     VENSeparatorView *separatorView = [cell addTopLineSeparatorType:topType bottomLineSeparatorType:bottomType
                                                          cellHeight:estimatedHeight];
-    separatorView.topStrokeColor = (separatorView.topSeparatorType == VENSeparatorTypeJagged) ? self.fillColor : self.strokeColor;
-    separatorView.bottomStrokeColor = (separatorView.bottomSeparatorType == VENSeparatorTypeJagged) ? self.fillColor : self.strokeColor;
+    separatorView.topStrokeColor = (separatorView.topSeparatorType == self.separatorType) ? self.fillColor : self.strokeColor;
+    separatorView.bottomStrokeColor = (separatorView.bottomSeparatorType == self.separatorType) ? self.fillColor : self.strokeColor;
     separatorView.fillColor = self.fillColor;
-    separatorView.backgroundColor = selfIsJagged ? self.fillColor : [UIColor clearColor];
+    separatorView.backgroundColor = selfAppliesStyle ? self.fillColor : [UIColor clearColor];
+    
     return separatorView;
 }
+
+
 
 @end

@@ -1,33 +1,48 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "UITableViewCell+VENSeparatorView.h"
+
 @class VENSeparatorView;
 
 @protocol VENSeparatorTableViewCellProviderDelegate <NSObject>
 
 @required
 /**
+ Returns Yes if the cell style at a given index path should be applied.
+ */
+- (BOOL)cellShouldApplySeparatorStyleAtIndexPath:(NSIndexPath *)indexPath;
+
+@optional
+//This method is deprecated use cellShouldApplySeparatorStyleAtIndexPath: instead
+/**
  YES if the cell at the given indexPath is a jagged cell. NO otherwise.
  */
-- (BOOL)isCellJaggedAtIndexPath:(NSIndexPath *)indexPath;
+- (BOOL)isCellJaggedAtIndexPath:(NSIndexPath *)indexPath __deprecated_msg("Use seperatorTypeAtIndexPath: instead");
 
 @end
 
 @interface VENSeparatorTableViewCellProvider : NSObject
 
 @property (nonatomic, weak) id<VENSeparatorTableViewCellProviderDelegate, UITableViewDataSource> delegate;
+@property (nonatomic) VENSeparatorType separatorType; 
 
 /**
- Creates a separator provider that can apply seperators with the given stroke color, fill color, border width and delegate.
+ Creates a separator provider that can apply separators with the given stroke color, fill color, border width and delegate.
 
  @param strokeColor The color of the separator lines.
  @param fillColor The color of the jagged cells.
  @param delegate The provider's delegate that conforms to the VENTableViewSeparatorProviderDelegate and UITableViewDataSource protocols.
 
- @return An initialized seperator provider.
+ @return An initialized separator provider.
  */
 - (instancetype)initWithStrokeColor:(UIColor *)strokeColor
                           fillColor:(UIColor *)fillColor
-                           delegate:(id<VENSeparatorTableViewCellProviderDelegate, UITableViewDataSource>)delegate;
+                           delegate:(id<VENSeparatorTableViewCellProviderDelegate, UITableViewDataSource>)delegate __deprecated_msg("Use initWithSeparatorType:StrokeColor:fillColor:delegate: instead");
+
+- (instancetype)initWithSeparatorType:(VENSeparatorType)separatorType
+                          StrokeColor:(UIColor *)strokeColor
+                            fillColor:(UIColor *)fillColor
+                             delegate:(id<VENSeparatorTableViewCellProviderDelegate, UITableViewDataSource>)delegate;
 
 
 /**

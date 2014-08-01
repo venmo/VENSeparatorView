@@ -33,17 +33,22 @@ VENSeparatorTypeNone
 UITableViewCell Provider
 -----------------------
 
-Making jagged cells in a UITableView is simple using the included VENSeparatorTableViewCellProvider
+Making styled cells in a UITableView is simple using the included VENSeparatorTableViewCellProvider
 
-Import ```#import "VENSeparatorTableViewCellProvider.h"``` in your UITableViewDataSource and conform this class to the ```VENSeparatorTableViewCellProviderDelegate``` protocol ```isCellJaggedAtIndexPath:``` method. 
+Import ```#import "VENSeparatorTableViewCellProvider.h"``` in your UITableViewDataSource and conform this class to the ```VENSeparatorTableViewCellProviderDelegate``` protocol ```cellShouldApplySeparatorStyleAtIndexPath:``` method. 
 
 Example:
 
 ```obj-c
-// Specifies that all cells with odd row index are jagged.
-- (BOOL)isCellJaggedAtIndexPath:(NSIndexPath *)indexPath
+// Specifies that cells at indexPath should apply separator style set in initializer. 
+- (BOOL) cellShouldApplySeparatorStyleAtIndexPath:(NSIndexPath)indexPath
 {
-	return (indexPath.row % 2);
+        if (indexPath.row % 7 == 4 ||indexPath.row % 5 == 2) {
+            return YES;
+        }
+        else {
+            return NO;
+        }
 }
 ```
 
@@ -55,12 +60,12 @@ Create a VENSeparatorTableViewCellProvider property:
 @property (nonatomic, strong) VENSeparatorTableViewCellProvider *separatorProvider;
 ```
 
-In this class's ```init``` method, or in the ```viewDidLoad``` method if this class is a UIViewController subclass, instantiate the VENSeparatorTableViewCellProvider property using its ```initWithStrokeColor:fillColor:delegate:``` method.
+In this class's ```init``` method, or in the ```viewDidLoad``` method, if this class is a UIViewController subclass, instantiate the VENSeparatorTableViewCellProvider property using its ```initWithSeparatorType:StrokeColor:fillColor:delegate:``` method.
 
 ```obj-c
-self.separatorProvider = [[VENSeparatorTableViewCellProvider alloc] initWithStrokeColor:[UIColor grayColor]
-                                                                              fillColor:[UIColor lightGrayColor]
-                                                                               delegate:self];
+self.separatorProvider = [[VENSeparatorTableViewCellProvider alloc] initWithSeparatorType:VENSeparatorTypeJagged                                                                                          StrokeColor:[UIColor grayColor]
+                                                                                fillColor:[UIColor lightGrayColor]
+                                                                                 delegate:self];
 ```
 
 At the end of your data source's ```tableView:cellForRowAtIndexPath:``` method apply separators to the UITableViewCell with the VENSeparatorTableViewCellProvider's ```applySeparatorsToCell:atIndexPath:inTableView:cellHeight:``` 
