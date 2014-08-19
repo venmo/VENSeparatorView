@@ -41,6 +41,7 @@
             separatorView = [[separatorClass alloc] initWithFrame:separatorFrame
                                              topLineSeparatorType:topLineSeparatorType
                                           bottomLineSeparatorType:bottomLineSeparatorType];
+            separatorView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
             separatorView.backgroundColor = [UIColor clearColor];
             [self.contentView insertSubview:separatorView atIndex:0];
         }
