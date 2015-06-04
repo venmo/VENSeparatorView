@@ -40,6 +40,8 @@
     }
     BOOL selfIsJagged = [self.delegate isCellJaggedAtIndexPath:indexPath];
 
+    BOOL cellIsTopCell = indexPath.section == 0 && indexPath.row == 0;
+
     VENSeparatorType topType;
     VENSeparatorType bottomType;
 
@@ -58,7 +60,7 @@
             topType = VENSeparatorTypeJagged;
         }
         else {
-            topType = VENSeparatorTypeStraight;
+            topType = cellIsTopCell? VENSeparatorTypeNone : VENSeparatorTypeStraight;
         }
         if (bottomIsJagged) {
             bottomType = VENSeparatorTypeJagged;
